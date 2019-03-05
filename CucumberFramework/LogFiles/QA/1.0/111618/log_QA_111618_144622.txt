@@ -1,0 +1,24 @@
+2018-11-16 14:46:22,674 INFO  [CreateLogger] Log File Created 
+2018-11-16 14:46:22,686 INFO  [CreateLogger] Suite Execution Started 
+2018-11-16 14:46:22,703 INFO  [CreateLogger] Starting Execution of the scenario: Successful Login With User Logins 
+2018-11-16 14:46:30,213 INFO  [CreateLogger] Launching Application 
+2018-11-16 14:46:32,039 INFO  [CreateLogger] Entering username and password 
+2018-11-16 14:46:34,403 INFO  [CreateLogger] Checking if home page is displayed or not 
+2018-11-16 14:47:34,599 INFO  [CreateLogger] Taking Screenshot for the failed scenario: Successful Login With User Logins 
+2018-11-16 14:47:36,193 INFO  [CreateLogger] Completed Execution of scenario: Successful Login With User Logins 
+2018-11-16 14:47:36,193 INFO  [CreateLogger] Starting Execution of the scenario: Successful Login With Manager Logins 
+2018-11-16 14:47:42,085 INFO  [CreateLogger] Launching Application 
+2018-11-16 14:47:43,887 INFO  [CreateLogger] Entering username and password 
+2018-11-16 14:47:46,405 INFO  [CreateLogger] Checking if home page is displayed or not 
+2018-11-16 14:47:47,399 INFO  [CreateLogger] Completed Execution of scenario: Successful Login With Manager Logins 
+2018-11-16 14:47:47,399 INFO  [CreateLogger] Starting Execution of the scenario: UnSuccessful Login With User Logins 
+2018-11-16 14:47:53,185 INFO  [CreateLogger] Launching Application 
+2018-11-16 14:47:55,048 INFO  [CreateLogger] Entering username and password 
+2018-11-16 14:47:55,647 INFO  [CreateLogger] Checking if login failed error message is displayed or not 
+2018-11-16 14:47:56,583 INFO  [CreateLogger] Completed Execution of scenario: UnSuccessful Login With User Logins 
+2018-11-16 14:47:56,583 INFO  [CreateLogger] Starting Execution of the scenario: UnSuccessful Login With Manager Logins 
+2018-11-16 14:48:02,230 INFO  [CreateLogger] Launching Application 
+2018-11-16 14:48:04,181 INFO  [CreateLogger] Entering username and password 
+2018-11-16 14:48:06,738 INFO  [CreateLogger] Checking if login failed error message is displayed or not 
+2018-11-16 14:48:07,717 INFO  [CreateLogger] Completed Execution of scenario: UnSuccessful Login With Manager Logins 
+2018-11-16 14:48:07,969 INFO  [CreateLogger] Suite Execution Completed 

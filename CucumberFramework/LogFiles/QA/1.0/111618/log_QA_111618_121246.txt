@@ -1,0 +1,10 @@
+2018-11-16 12:12:46,777 INFO  [CreateLogger] Log File Created 
+2018-11-16 12:12:46,777 INFO  [CreateLogger] Suite Execution Started 
+2018-11-16 12:12:46,793 INFO  [CreateLogger] Starting Execution of the scenario: Validate SLA In New Assignment Creation Flow 
+2018-11-16 12:12:53,453 INFO  [CreateLogger] Launching Application 
+2018-11-16 12:12:55,310 INFO  [CreateLogger] Entering username and password 
+2018-11-16 12:12:56,915 INFO  [CreateLogger] Checking if home page is displayed or not 
+2018-11-16 12:14:32,269 INFO  [CreateLogger] Tick mark displayed in initiation section  
+2018-11-16 12:14:32,347 INFO  [CreateLogger] Approval state changed to Blue Color 
+2018-11-16 12:14:33,314 INFO  [CreateLogger] Completed Execution of scenario: Validate SLA In New Assignment Creation Flow 
+2018-11-16 12:14:33,523 INFO  [CreateLogger] Suite Execution Completed 

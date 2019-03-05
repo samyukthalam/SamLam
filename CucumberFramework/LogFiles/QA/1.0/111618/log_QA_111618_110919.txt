@@ -1,0 +1,17 @@
+2018-11-16 11:09:19,709 INFO  [CreateLogger] Log File Created 
+2018-11-16 11:09:19,709 INFO  [CreateLogger] Suite Execution Started 
+2018-11-16 11:09:19,709 INFO  [CreateLogger] Starting Execution of the scenario: Verify all three decisions are approved 
+2018-11-16 11:09:26,218 INFO  [CreateLogger] Launching Application 
+2018-11-16 11:09:28,273 INFO  [CreateLogger] Entering User Name And Password 
+2018-11-16 11:09:30,972 INFO  [CreateLogger] Checking if user is in home page or not 
+2018-11-16 11:09:31,042 INFO  [CreateLogger] Creating end to end assigmnent flow 
+2018-11-16 11:09:40,340 INFO  [CreateLogger] Verifying decisions 
+2018-11-16 11:09:41,352 INFO  [CreateLogger] Completed Execution of scenario: Verify all three decisions are approved 
+2018-11-16 11:09:41,352 INFO  [CreateLogger] Starting Execution of the scenario: Verify the three decisions are approved, approved and rejected 
+2018-11-16 11:09:47,183 INFO  [CreateLogger] Launching Application 
+2018-11-16 11:09:49,250 INFO  [CreateLogger] Entering User Name And Password 
+2018-11-16 11:09:51,033 INFO  [CreateLogger] Checking if user is in home page or not 
+2018-11-16 11:09:51,114 INFO  [CreateLogger] Creating end to end assigmnent flow 
+2018-11-16 11:10:00,224 INFO  [CreateLogger] Verifying decisions 
+2018-11-16 11:10:01,283 INFO  [CreateLogger] Completed Execution of scenario: Verify the three decisions are approved, approved and rejected 
+2018-11-16 11:10:01,446 INFO  [CreateLogger] Suite Execution Completed 

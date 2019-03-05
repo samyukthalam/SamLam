@@ -1,0 +1,5 @@
+2018-11-20 22:03:56,291 INFO  [CreateLogger] Log File Created 
+2018-11-20 22:03:56,292 INFO  [CreateLogger] Suite Execution Started 
+2018-11-20 22:03:56,308 INFO  [CreateLogger] Starting Execution of the scenario:  
+2018-11-20 22:04:03,598 INFO  [CreateLogger] Launching Application 
+2018-11-20 22:04:12,131 INFO  [CreateLogger] Taking Screenshot for the failed scenario:  

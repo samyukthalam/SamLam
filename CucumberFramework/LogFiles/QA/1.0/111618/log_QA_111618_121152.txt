@@ -1,0 +1,8 @@
+2018-11-16 12:11:52,395 INFO  [CreateLogger] Log File Created 
+2018-11-16 12:11:52,395 INFO  [CreateLogger] Suite Execution Started 
+2018-11-16 12:11:52,427 INFO  [CreateLogger] Starting Execution of the scenario: Validate SLA In New Assignment Creation Flow 
+2018-11-16 12:11:59,036 INFO  [CreateLogger] Launching Application 
+2018-11-16 12:12:00,910 INFO  [CreateLogger] Entering username and password 
+2018-11-16 12:12:02,427 INFO  [CreateLogger] Checking if home page is displayed or not 
+2018-11-16 12:12:06,986 INFO  [CreateLogger] Completed Execution of scenario: Validate SLA In New Assignment Creation Flow 
+2018-11-16 12:12:07,255 INFO  [CreateLogger] Suite Execution Completed 

@@ -1,0 +1,5 @@
+2018-11-20 21:44:09,379 INFO  [CreateLogger] Log File Created 
+2018-11-20 21:44:09,380 INFO  [CreateLogger] Suite Execution Started 
+2018-11-20 21:44:09,390 INFO  [CreateLogger] Launching Application 
+2018-11-20 21:44:09,390 INFO  [CreateLogger] Taking Screenshot for the failed scenario:  
+2018-11-20 21:44:09,623 INFO  [CreateLogger] Suite Execution Completed 

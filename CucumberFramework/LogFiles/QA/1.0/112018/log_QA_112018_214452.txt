@@ -1,0 +1,9 @@
+2018-11-20 21:44:52,383 INFO  [CreateLogger] Log File Created 
+2018-11-20 21:44:52,384 INFO  [CreateLogger] Suite Execution Started 
+2018-11-20 21:44:52,395 INFO  [CreateLogger] Starting Execution of the scenario:  
+2018-11-20 21:44:59,597 INFO  [CreateLogger] Launching Application 
+2018-11-20 21:45:01,774 INFO  [CreateLogger] Entering username and password 
+2018-11-20 21:45:03,867 INFO  [CreateLogger] Checking if Manager home page is displayed or not 
+2018-11-20 21:45:05,341 INFO  [CreateLogger] Taking Screenshot for the failed scenario:  
+2018-11-20 21:45:07,156 INFO  [CreateLogger] Completed Execution of scenario:  
+2018-11-20 21:45:07,387 INFO  [CreateLogger] Suite Execution Completed 

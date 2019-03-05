@@ -1,0 +1,11 @@
+2018-11-16 11:54:59,386 INFO  [CreateLogger] Log File Created 
+2018-11-16 11:54:59,387 INFO  [CreateLogger] Suite Execution Started 
+2018-11-16 11:54:59,402 INFO  [CreateLogger] Starting Execution of the scenario: Create A Report 
+2018-11-16 11:55:08,004 INFO  [CreateLogger] Launching Application 
+2018-11-16 11:55:09,857 INFO  [CreateLogger] Entering username and password 
+2018-11-16 11:55:11,447 INFO  [CreateLogger] Checking if home page is displayed or not 
+2018-11-16 11:55:16,172 INFO  [CreateLogger] Creating Report Category 
+2018-11-16 11:55:24,240 INFO  [CreateLogger] Creating a Report 
+2018-11-16 11:55:45,447 INFO  [CreateLogger] Verifying if the created report is displayed or not 
+2018-11-16 11:55:46,503 INFO  [CreateLogger] Completed Execution of scenario: Create A Report 
+2018-11-16 11:55:46,668 INFO  [CreateLogger] Suite Execution Completed 

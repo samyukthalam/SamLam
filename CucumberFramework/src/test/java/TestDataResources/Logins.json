@@ -1,0 +1,20 @@
+{
+	"UserName": "loanccdemouser1",
+	"Password": "rules",
+	"ManagerUserName": "loanccdemomanager1",
+	"ManagerPassword": "rules",
+	"AdminUserName": "admin.loancc",
+	"AdminPassword": "rules",
+	"PlatinumOpUserName": "PlatinumOp",
+	"PlatinumOpPassword": "rules",
+	"SilverOpUserName": "SilverOp",
+	"SilverOpPassword": "rules",
+	"GoldOpUserName": "GoldOp",
+	"GoldOpPassword": "rules",
+	"MathOpUserName": "MathOp",
+	"MathOpPassword": "rules",
+	"ScienceOpUserName": "ScienceOp",
+	"ScienceOpPassword": "rules",
+	"EconomicsOpUserName": "EconomicsOp",
+	"EconomicsOpPassword": "rules"
+}

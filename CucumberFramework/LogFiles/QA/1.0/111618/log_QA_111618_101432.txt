@@ -1,0 +1,21 @@
+2018-11-16 10:14:32,924 INFO  [CreateLogger] Log File Created 
+2018-11-16 10:14:32,925 INFO  [CreateLogger] Suite Execution Started 
+2018-11-16 10:14:32,938 INFO  [CreateLogger] Starting Execution of the scenario: Verifying certain fields and tabs are only displayed for Manager 
+2018-11-16 10:14:39,669 INFO  [CreateLogger] Launching Application 
+2018-11-16 10:14:43,060 INFO  [CreateLogger] Entering username and password 
+2018-11-16 10:14:47,261 INFO  [CreateLogger] Checking if home page is displayed or not 
+2018-11-16 10:14:48,474 INFO  [CreateLogger] Summary For Section is NOT Displayed When Logged In As a Manager  
+2018-11-16 10:14:48,500 INFO  [CreateLogger] Welcome To Section is NOT Displayed When Logged In As a Manager  
+2018-11-16 10:14:49,625 INFO  [CreateLogger] Dashboard link is Displayed When Logged In As a Manager  
+2018-11-16 10:14:49,655 INFO  [CreateLogger] Reports link is Displayed When Logged In As a Manager  
+2018-11-16 10:14:49,698 INFO  [CreateLogger] Following link is Displayed When Logged In As a Manager  
+2018-11-16 10:14:50,604 INFO  [CreateLogger] Completed Execution of scenario: Verifying certain fields and tabs are only displayed for Manager 
+2018-11-16 10:14:50,611 INFO  [CreateLogger] Starting Execution of the scenario: Verifying certain fields and tabs are Not displayed for User 
+2018-11-16 10:14:56,180 INFO  [CreateLogger] Launching Application 
+2018-11-16 10:15:00,014 INFO  [CreateLogger] Entering username and password 
+2018-11-16 10:15:02,460 INFO  [CreateLogger] Checking if home page is displayed or not 
+2018-11-16 10:15:04,623 INFO  [CreateLogger] Dashboard link is NOT Displayed When Logged In As a User  
+2018-11-16 10:15:04,642 INFO  [CreateLogger] Reports link is NOT Displayed When Logged In As a User  
+2018-11-16 10:15:04,661 INFO  [CreateLogger] Following link is NOT Displayed When Logged In As a User  
+2018-11-16 10:15:05,528 INFO  [CreateLogger] Completed Execution of scenario: Verifying certain fields and tabs are Not displayed for User 
+2018-11-16 10:15:05,720 INFO  [CreateLogger] Suite Execution Completed 

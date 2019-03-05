@@ -1,0 +1,8 @@
+2018-11-22 11:08:30,672 INFO  [CreateLogger] Failed Test Execution Log File Created 
+2018-11-22 11:08:30,673 INFO  [CreateLogger] Execution Of Failed Tests Started 
+2018-11-22 11:08:30,673 INFO  [CreateLogger] Starting Execution of the scenario: Successful Login With User Logins 
+2018-11-22 11:08:40,363 INFO  [CreateLogger] Launching Application 
+2018-11-22 11:08:42,245 INFO  [CreateLogger] Entering username and password 
+2018-11-22 11:08:44,512 INFO  [CreateLogger] Checking if home page is displayed or not 
+2018-11-22 11:08:45,609 INFO  [CreateLogger] Completed Execution of scenario: Successful Login With User Logins 
+2018-11-22 11:08:45,828 INFO  [CreateLogger] Execution Of Failed Tests Completed 

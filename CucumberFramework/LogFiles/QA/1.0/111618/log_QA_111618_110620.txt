@@ -1,0 +1,10 @@
+2018-11-16 11:06:20,148 INFO  [CreateLogger] Log File Created 
+2018-11-16 11:06:20,148 INFO  [CreateLogger] Suite Execution Started 
+2018-11-16 11:06:20,148 INFO  [CreateLogger] Starting Execution of the scenario: Create End To End Flow By Logging In As User 
+2018-11-16 11:06:26,764 INFO  [CreateLogger] Launching Application 
+2018-11-16 11:06:28,669 INFO  [CreateLogger] Entering User Name And Password 
+2018-11-16 11:06:30,420 INFO  [CreateLogger] Checking if user is in home page or not 
+2018-11-16 11:06:30,510 INFO  [CreateLogger] Creating end to end assigmnent flow 
+2018-11-16 11:06:39,883 INFO  [CreateLogger] Verifying decisions 
+2018-11-16 11:06:40,953 INFO  [CreateLogger] Completed Execution of scenario: Create End To End Flow By Logging In As User 
+2018-11-16 11:06:41,117 INFO  [CreateLogger] Suite Execution Completed 

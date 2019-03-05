@@ -1,0 +1,87 @@
+2018-11-15 15:31:42,672 INFO  [CreateLogger] Log File Created 
+2018-11-15 15:31:42,672 INFO  [CreateLogger] Suite Execution Started 
+2018-11-15 15:31:42,688 INFO  [CreateLogger] Starting Execution of the scenario: Login as Admin 
+2018-11-15 15:31:51,545 INFO  [CreateLogger] Launching Application 
+2018-11-15 15:31:55,013 INFO  [CreateLogger] Entering Admin UserName And Password 
+2018-11-15 15:31:57,302 INFO  [CreateLogger] Checking if admin login is successful or not 
+2018-11-15 15:31:58,664 INFO  [CreateLogger] Completed Execution of scenario: Login as Admin 
+2018-11-15 15:31:58,664 INFO  [CreateLogger] Starting Execution of the scenario: Create End To End Flow By Logging In As User 
+2018-11-15 15:32:06,677 INFO  [CreateLogger] Launching Application 
+2018-11-15 15:32:08,398 INFO  [CreateLogger] Entering User Name And Password 
+2018-11-15 15:32:10,263 INFO  [CreateLogger] Checking if user is in home page or not 
+2018-11-15 15:32:10,328 INFO  [CreateLogger] Creating end to end assigmnent flow 
+2018-11-15 15:32:19,526 INFO  [CreateLogger] Verifying decisions 
+2018-11-15 15:32:20,665 INFO  [CreateLogger] Completed Execution of scenario: Create End To End Flow By Logging In As User 
+2018-11-15 15:32:20,665 INFO  [CreateLogger] Starting Execution of the scenario: Create End To End Flow By Logging In As User In IE Browser 
+2018-11-15 15:32:24,935 INFO  [CreateLogger] Launching Application 
+2018-11-15 15:32:26,570 INFO  [CreateLogger] Entering User Name And Password 
+2018-11-15 15:32:32,269 INFO  [CreateLogger] Checking if user is in home page or not 
+2018-11-15 15:32:32,664 INFO  [CreateLogger] Creating end to end assigmnent flow 
+2018-11-15 15:32:34,590 INFO  [CreateLogger] Taking Screenshot for the failed scenario: Create End To End Flow By Logging In As User 
+2018-11-15 15:32:35,398 INFO  [CreateLogger] Completed Execution of scenario: Create End To End Flow By Logging In As User 
+2018-11-15 15:32:35,398 INFO  [CreateLogger] Starting Execution of the scenario: Create End To End Flow By Logging In As User In Chrome Browser 
+2018-11-15 15:32:42,228 INFO  [CreateLogger] Launching Application 
+2018-11-15 15:32:43,778 INFO  [CreateLogger] Entering User Name And Password 
+2018-11-15 15:32:45,228 INFO  [CreateLogger] Checking if user is in home page or not 
+2018-11-15 15:32:45,280 INFO  [CreateLogger] Creating end to end assigmnent flow 
+2018-11-15 15:32:54,350 INFO  [CreateLogger] Verifying decisions 
+2018-11-15 15:33:54,400 INFO  [CreateLogger] Taking Screenshot for the failed scenario: Create End To End Flow By Logging In As User 
+2018-11-15 15:33:55,962 INFO  [CreateLogger] Completed Execution of scenario: Create End To End Flow By Logging In As User 
+2018-11-15 15:33:55,962 INFO  [CreateLogger] Starting Execution of the scenario: Create End To End Flow By Logging In As User In Firefox Browser 
+2018-11-15 15:34:04,478 INFO  [CreateLogger] Launching Application 
+2018-11-15 15:34:05,838 INFO  [CreateLogger] Entering User Name And Password 
+2018-11-15 15:34:07,344 INFO  [CreateLogger] Checking if user is in home page or not 
+2018-11-15 15:34:07,404 INFO  [CreateLogger] Creating end to end assigmnent flow 
+2018-11-15 15:34:17,266 INFO  [CreateLogger] Verifying decisions 
+2018-11-15 15:34:19,869 INFO  [CreateLogger] Completed Execution of scenario: Create End To End Flow By Logging In As User 
+2018-11-15 15:34:19,869 INFO  [CreateLogger] Starting Execution of the scenario: Logout When Logged In As User And Manager 
+2018-11-15 15:34:27,931 INFO  [CreateLogger] Launching Application 
+2018-11-15 15:34:29,509 INFO  [CreateLogger] Entering Username and Password 
+2018-11-15 15:34:33,212 INFO  [CreateLogger] Checking if Login is successful 
+2018-11-15 15:34:33,284 INFO  [CreateLogger] Logging out 
+2018-11-15 15:34:34,310 INFO  [CreateLogger] Checking if logout is successful or not 
+2018-11-15 15:34:38,365 INFO  [CreateLogger] Completed Execution of scenario: Logout When Logged In As User And Manager 
+2018-11-15 15:34:38,366 INFO  [CreateLogger] Starting Execution of the scenario: Logout When Logged In As User And Manager 
+2018-11-15 15:34:46,422 INFO  [CreateLogger] Launching Application 
+2018-11-15 15:34:50,029 INFO  [CreateLogger] Entering Username and Password 
+2018-11-15 15:34:52,289 INFO  [CreateLogger] Checking if Login is successful 
+2018-11-15 15:34:52,350 INFO  [CreateLogger] Logging out 
+2018-11-15 15:34:54,523 INFO  [CreateLogger] Checking if logout is successful or not 
+2018-11-15 15:34:58,654 INFO  [CreateLogger] Completed Execution of scenario: Logout When Logged In As User And Manager 
+2018-11-15 15:34:58,654 INFO  [CreateLogger] Starting Execution of the scenario: Successful Login With User Logins 
+2018-11-15 15:35:06,713 INFO  [CreateLogger] Launching Application 
+2018-11-15 15:35:08,299 INFO  [CreateLogger] Entering username and password 
+2018-11-15 15:35:11,302 INFO  [CreateLogger] Checking if home page is displayed or not 
+2018-11-15 15:35:12,401 INFO  [CreateLogger] Completed Execution of scenario: Successful Login With User Logins 
+2018-11-15 15:35:12,404 INFO  [CreateLogger] Starting Execution of the scenario: Successful Login With Manager Logins 
+2018-11-15 15:35:20,408 INFO  [CreateLogger] Launching Application 
+2018-11-15 15:35:21,948 INFO  [CreateLogger] Entering username and password 
+2018-11-15 15:35:23,380 INFO  [CreateLogger] Checking if home page is displayed or not 
+2018-11-15 15:35:24,387 INFO  [CreateLogger] Completed Execution of scenario: Successful Login With Manager Logins 
+2018-11-15 15:35:24,387 INFO  [CreateLogger] Starting Execution of the scenario: UnSuccessful Login With User Logins 
+2018-11-15 15:35:32,345 INFO  [CreateLogger] Launching Application 
+2018-11-15 15:35:33,995 INFO  [CreateLogger] Entering username and password 
+2018-11-15 15:35:34,632 INFO  [CreateLogger] Checking if login failed error message is displayed or not 
+2018-11-15 15:35:35,667 INFO  [CreateLogger] Completed Execution of scenario: UnSuccessful Login With User Logins 
+2018-11-15 15:35:35,667 INFO  [CreateLogger] Starting Execution of the scenario: UnSuccessful Login With Manager Logins 
+2018-11-15 15:35:43,468 INFO  [CreateLogger] Launching Application 
+2018-11-15 15:35:44,979 INFO  [CreateLogger] Entering username and password 
+2018-11-15 15:35:45,560 INFO  [CreateLogger] Checking if login failed error message is displayed or not 
+2018-11-15 15:35:46,720 INFO  [CreateLogger] Completed Execution of scenario: UnSuccessful Login With Manager Logins 
+2018-11-15 15:35:46,720 INFO  [CreateLogger] Starting Execution of the scenario: Client side validations 
+2018-11-15 15:35:54,836 INFO  [CreateLogger] Launching Application 
+2018-11-15 15:35:56,401 INFO  [CreateLogger] Entering User Name And Password 
+2018-11-15 15:35:58,065 INFO  [CreateLogger] Checking if user is in home page or not 
+2018-11-15 15:35:58,119 INFO  [CreateLogger] Navigating to Pending Intitial Data Entry Screen 
+2018-11-15 15:36:04,066 INFO  [CreateLogger] Clicked Continue button 
+2018-11-15 15:36:04,189 INFO  [CreateLogger] Validating client side validation Message 
+2018-11-15 15:36:06,305 INFO  [CreateLogger] Completed Execution of scenario: Client side validations 
+2018-11-15 15:36:06,305 INFO  [CreateLogger] Starting Execution of the scenario: Server side validations 
+2018-11-15 15:36:14,214 INFO  [CreateLogger] Launching Application 
+2018-11-15 15:36:17,748 INFO  [CreateLogger] Entering User Name And Password 
+2018-11-15 15:36:19,487 INFO  [CreateLogger] Checking if user is in home page or not 
+2018-11-15 15:36:19,528 INFO  [CreateLogger] Navigating to Pending Intitial Data Entry Screen 
+2018-11-15 15:36:25,469 INFO  [CreateLogger] Entering Data In Pending Initial Data Entry Screen 
+2018-11-15 15:36:27,085 INFO  [CreateLogger] Validating server side validation Message 
+2018-11-15 15:36:31,205 INFO  [CreateLogger] Completed Execution of scenario: Server side validations 
+2018-11-15 15:36:31,543 INFO  [CreateLogger] Suite Execution Completed 

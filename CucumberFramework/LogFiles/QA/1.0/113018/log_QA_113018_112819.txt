@@ -1,0 +1,23 @@
+2018-11-30 11:28:19,679 INFO  [CreateLogger] Log File Created 
+2018-11-30 11:28:19,681 INFO  [CreateLogger] Suite Execution Started 
+2018-11-30 11:28:19,715 INFO  [CreateLogger] Starting Execution of the scenario: Successful Login With User Logins 
+2018-11-30 11:28:30,576 INFO  [CreateLogger] Launching Application 
+2018-11-30 11:28:53,246 INFO  [CreateLogger] Entering username and password 
+2018-11-30 11:28:58,361 INFO  [CreateLogger] Checking if home page is displayed or not 
+2018-11-30 11:28:59,472 INFO  [CreateLogger] Completed Execution of scenario: Successful Login With User Logins 
+2018-11-30 11:28:59,475 INFO  [CreateLogger] Starting Execution of the scenario: Successful Login With Manager Logins 
+2018-11-30 11:29:07,114 INFO  [CreateLogger] Launching Application 
+2018-11-30 11:29:29,589 INFO  [CreateLogger] Entering username and password 
+2018-11-30 11:29:32,314 INFO  [CreateLogger] Checking if home page is displayed or not 
+2018-11-30 11:29:33,451 INFO  [CreateLogger] Completed Execution of scenario: Successful Login With Manager Logins 
+2018-11-30 11:29:33,454 INFO  [CreateLogger] Starting Execution of the scenario: UnSuccessful Login With User Logins 
+2018-11-30 11:29:41,240 INFO  [CreateLogger] Launching Application 
+2018-11-30 11:30:03,988 INFO  [CreateLogger] Entering username and password 
+2018-11-30 11:30:04,929 INFO  [CreateLogger] Checking if login failed error message is displayed or not 
+2018-11-30 11:30:05,915 INFO  [CreateLogger] Completed Execution of scenario: UnSuccessful Login With User Logins 
+2018-11-30 11:30:05,918 INFO  [CreateLogger] Starting Execution of the scenario: UnSuccessful Login With Manager Logins 
+2018-11-30 11:30:13,695 INFO  [CreateLogger] Launching Application 
+2018-11-30 11:30:36,293 INFO  [CreateLogger] Entering username and password 
+2018-11-30 11:30:36,980 INFO  [CreateLogger] Checking if login failed error message is displayed or not 
+2018-11-30 11:30:37,981 INFO  [CreateLogger] Completed Execution of scenario: UnSuccessful Login With Manager Logins 
+2018-11-30 11:30:39,200 INFO  [CreateLogger] Suite Execution Completed 

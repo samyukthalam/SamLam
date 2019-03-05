@@ -1,0 +1,16 @@
+2018-11-20 21:56:27,031 INFO  [CreateLogger] Log File Created 
+2018-11-20 21:56:27,031 INFO  [CreateLogger] Suite Execution Started 
+2018-11-20 21:56:27,049 INFO  [CreateLogger] Starting Execution of the scenario:  
+2018-11-20 21:56:34,253 INFO  [CreateLogger] Launching Application 
+2018-11-20 21:56:36,391 INFO  [CreateLogger] Entering username and password 
+2018-11-20 21:56:38,289 INFO  [CreateLogger] Checking if Manager home page is displayed or not 
+2018-11-20 21:56:44,293 INFO  [CreateLogger] Created a New FFM with customerID as :1102 
+2018-11-20 21:56:44,323 INFO  [CreateLogger] Case ID for the new FFM is: F-115 
+2018-11-20 21:56:44,338 INFO  [CreateLogger] Logging out 
+2018-11-20 21:56:45,125 INFO  [CreateLogger] Checking if logout is successful or not 
+2018-11-20 21:56:48,183 INFO  [CreateLogger] Entering username and password 
+2018-11-20 21:56:49,195 INFO  [CreateLogger] Checking if Manager home page is displayed or not 
+2018-11-20 21:56:52,240 INFO  [CreateLogger] Navigated to User WorkList By clicking on My Work button 
+2018-11-20 21:57:02,398 INFO  [CreateLogger] Taking Screenshot for the failed scenario:  
+2018-11-20 21:57:04,712 INFO  [CreateLogger] Completed Execution of scenario:  
+2018-11-20 21:57:05,116 INFO  [CreateLogger] Suite Execution Completed 

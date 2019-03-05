@@ -1,0 +1,29 @@
+2018-11-21 15:05:46,096 INFO  [CreateLogger] Log File Created 
+2018-11-21 15:05:46,096 INFO  [CreateLogger] Suite Execution Started 
+2018-11-21 15:05:46,135 INFO  [CreateLogger] Starting Execution of the scenario:  
+2018-11-21 15:05:55,701 INFO  [CreateLogger] Launching Application 
+2018-11-21 15:05:57,541 INFO  [CreateLogger] Entering username and password 
+2018-11-21 15:06:01,846 INFO  [CreateLogger] Checking if Manager home page is displayed or not 
+2018-11-21 15:06:12,090 INFO  [CreateLogger] Created a New Exam Grading with Subject as: Science 
+2018-11-21 15:06:12,212 INFO  [CreateLogger] Case ID for the new Exam Grading is: E-48 
+2018-11-21 15:06:12,218 INFO  [CreateLogger] Logging out 
+2018-11-21 15:06:14,052 INFO  [CreateLogger] Checking if logout is successful or not 
+2018-11-21 15:06:17,106 INFO  [CreateLogger] Entering username and password 
+2018-11-21 15:06:18,454 INFO  [CreateLogger] Checking if Manager home page is displayed or not 
+2018-11-21 15:06:23,214 INFO  [CreateLogger] Clicked on GetNextWork button in the Home Page 
+2018-11-21 15:06:26,368 INFO  [CreateLogger] Case ID is displayed in ScienceOp WorkBasket: (E-48) 
+2018-11-21 15:06:27,585 INFO  [CreateLogger] Completed Execution of scenario:  
+2018-11-21 15:06:27,595 INFO  [CreateLogger] Starting Execution of the scenario:  
+2018-11-21 15:06:37,697 INFO  [CreateLogger] Launching Application 
+2018-11-21 15:06:39,495 INFO  [CreateLogger] Entering username and password 
+2018-11-21 15:06:41,913 INFO  [CreateLogger] Checking if Manager home page is displayed or not 
+2018-11-21 15:06:53,093 INFO  [CreateLogger] Created a New FFM with customerID as :1102 
+2018-11-21 15:06:53,143 INFO  [CreateLogger] Case ID for the new FFM is: F-121 
+2018-11-21 15:06:53,153 INFO  [CreateLogger] Logging out 
+2018-11-21 15:06:57,610 INFO  [CreateLogger] Checking if logout is successful or not 
+2018-11-21 15:07:00,662 INFO  [CreateLogger] Entering username and password 
+2018-11-21 15:07:02,449 INFO  [CreateLogger] Checking if Manager home page is displayed or not 
+2018-11-21 15:07:06,083 INFO  [CreateLogger] Navigated to User WorkList By clicking on My Work button 
+2018-11-21 15:07:06,274 INFO  [CreateLogger] Case ID is displayed in GoldOp WorkList: F-121 
+2018-11-21 15:07:07,360 INFO  [CreateLogger] Completed Execution of scenario:  
+2018-11-21 15:07:07,787 INFO  [CreateLogger] Suite Execution Completed 

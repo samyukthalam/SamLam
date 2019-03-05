@@ -1,0 +1,8 @@
+2018-11-21 21:08:30,997 INFO  [CreateLogger] Log File Created 
+2018-11-21 21:08:30,997 INFO  [CreateLogger] Suite Execution Started 
+2018-11-21 21:08:31,014 INFO  [CreateLogger] Starting Execution of the scenario: Login as Admin 
+2018-11-21 21:08:38,017 INFO  [CreateLogger] Launching Application 
+2018-11-21 21:08:40,159 INFO  [CreateLogger] Entering Admin UserName And Password 
+2018-11-21 21:08:43,118 INFO  [CreateLogger] Checking if admin login is successful or not 
+2018-11-21 21:08:44,524 INFO  [CreateLogger] Completed Execution of scenario: Login as Admin 
+2018-11-21 21:08:44,757 INFO  [CreateLogger] Suite Execution Completed 

@@ -1,0 +1,15 @@
+{
+	"FirstName": "Swathi",
+	"LastName": "Lam",
+	"Gender": "Female",
+	"Mobile": "9652007082",
+	"Email": "swathi.lam@wipro.com",
+	"NIK": "@#%#^#&^",
+	"Country": "India",
+	"PIN": "1234",
+	"LoanAmount": "1000",
+	"LoanType": "Credit Card",
+	"Decision1": "Approved",
+	"Decision2": "Approved",
+	"Decision3": "Approved"
+}
