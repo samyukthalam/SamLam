@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestSuite1]">
+  <listeners>
+    <listener class-name="Listeners.RetryListenerClass"/>
+  </listeners>
+  <test thread-count="5" name="TestSuite1Tests(failed)">
+    <classes>
+      <class name="TestScripts.BaseSuiteFile">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="afterSuite"/>
+          <include name="beforeMethod"/>
+          <include name="afterClass"/>
+          <include name="TC02_ManagerLogin"/>
+        </methods>
+      </class> <!-- TestScripts.BaseSuiteFile -->
+    </classes>
+  </test> <!-- TestSuite1Tests(failed) -->
+</suite> <!-- Failed suite [TestSuite1] -->

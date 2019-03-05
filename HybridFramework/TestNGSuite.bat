@@ -1,0 +1,1 @@
+mvn clean test -DsuiteXmlFile=C:\Users\pegauser\Desktop\HybridFramework\HybridFramework\TestSuite.xml

@@ -1,0 +1,537 @@
+<html>
+<head>
+<title>TestNG:  IE Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>IE Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>11/6/1</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Nov 07 12:52:46 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>418 seconds (418977 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC03_NewUserE2EFlow()'><b>TC03_NewUserE2EFlow</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: Login to The Portal using User Logins and create an End to End Flow</td>
+<td><div><pre>junit.framework.AssertionFailedError: Decisions are NOT correctly displayed in Approval Pageorg.openqa.selenium.ElementNotInteractableException: Element is not displayed
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;L-156141652&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:24167/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: c194ac74-1798-4fe7-b83e-94d14179505f
+	at junit.framework.Assert.fail(Assert.java:47)
+	at TestScripts.TC03_NewUserE2EFlow.NewUserE2EFlow(TC03_NewUserE2EFlow.java:80)
+	at TestScripts.BaseSuiteFile.TC03_NewUserE2EFlow(BaseSuiteFile.java:179)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace441886406", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace441886406'><pre>junit.framework.AssertionFailedError: Decisions are NOT correctly displayed in Approval Pageorg.openqa.selenium.ElementNotInteractableException: Element is not displayed
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;L-156141652&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:24167/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: c194ac74-1798-4fe7-b83e-94d14179505f
+	at junit.framework.Assert.fail(Assert.java:47)
+	at TestScripts.TC03_NewUserE2EFlow.NewUserE2EFlow(TC03_NewUserE2EFlow.java:80)
+	at TestScripts.BaseSuiteFile.TC03_NewUserE2EFlow(BaseSuiteFile.java:179)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>TestScripts.BaseSuiteFile@3cce5371</td></tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC05_RoleBasedSecurity()'><b>TC05_RoleBasedSecurity</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: Role Based Security</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at TestScripts.TC05_RoleBasedSecurity.roleBasedSecurity(TC05_RoleBasedSecurity.java:22)
+	at TestScripts.BaseSuiteFile.TC05_RoleBasedSecurity(BaseSuiteFile.java:189)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1567226119", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1567226119'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:568)
+	at org.testng.Assert.assertEquals(Assert.java:578)
+	at TestScripts.TC05_RoleBasedSecurity.roleBasedSecurity(TC05_RoleBasedSecurity.java:22)
+	at TestScripts.BaseSuiteFile.TC05_RoleBasedSecurity(BaseSuiteFile.java:189)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>14</td>
+<td>TestScripts.BaseSuiteFile@3cce5371</td></tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC07_Reporting()'><b>TC07_Reporting</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: Report Category and Report creation With Manager Login</td>
+<td><div><pre>junit.framework.AssertionFailedError: Report Creation Failed org.openqa.selenium.ElementClickInterceptedException: Element not clickable at point (1187,65). Other element would receive the click: &lt;div class=&quot;modal-align-cell&quot;&gt;
+                    &lt;div class=&quot;modal-wrapper&quot; id=&quot;modalWrapper&quot; role=&quot;dialog&quot; aria-labelledby=&quot;modaldialog_hd_title&quot; style=&quot;width: auto; height: auto;&quot;&gt;
+                        &lt;div class=&quot;modal-content&quot; id=&quot;modalContent&quot; uniqueID=&quot;yui-gen2&quot;&gt;
+&lt;div class=&quot;sectionDivStyle &quot; id=&quot;RULE_KEY&quot; version=&quot;1&quot; node_name=&quot;pyReportBrowserTemplate&quot; data-template=&quot;&quot; data-node-id=&quot;pyReportBrowserTemplate&quot; uniqueid=&quot;SID1541575649226&quot; expandrl=&quot;&quot; pyclassname=&quot;Data-Report-Browser&quot; objclass=&quot;Rule-HTML-Section&quot; node_type=&quot;MAIN_RULE&quot; base_ref=&quot;&quot; name=&quot;BASE_REF&quot; readonly=&quot;false&quot; index=&quot;&quot;&gt;
+  
+    &lt;table class=&quot;customTableBoxStyle&quot; id=&quot;EXPAND-OUTERFRAME&quot; role=&quot;presentation&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; param_name=&quot;EXPANDEDSubSectionpyReportBrowserTemplateB&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;div class=&quot;hd&quot; id=&quot;modaldialog_hd&quot; role=&quot;alert&quot; style=&quot;max-width: 1315px;&quot;&gt;
+	&lt;span id=&quot;modaldialog_hd_title&quot;&gt;        Create new category       &lt;/span&gt;
+	&lt;button name=&quot;ModalHelpButton&quot; title=&quot;&quot; class=&quot;pi pi-help contextual-help&quot; id=&quot;ModalHelpButton&quot; style=&quot;top: 2px; color: rgb(32, 125, 200); margin-left: 2px; display: none; position: absolute;&quot; onclick=&quot;displayHelp(event)&quot;&gt;&lt;/button&gt;
+	&lt;button title=&quot;close modal&quot; class=&quot;container-close&quot; id=&quot;container_close&quot; type=&quot;button&quot;&gt;&lt;/button&gt;
+&lt;/div&gt;&lt;div class=&quot;customExpandInnerDivStyle yui-resize modal-scroll-panel&quot; id=&quot;yui-gen5&quot; style=&quot;max-height: 475px; max-width: 1287px;&quot; section_index=&quot;1&quot;&gt;&lt;table width=&quot;100%&quot; role=&quot;presentation&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+							&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;dataLabelWrite&quot; style=&quot;width: 100%; min-width: 250px;&quot;&gt;&lt;div id=&quot;modaldialog_con&quot;&gt;   &lt;div align=&apos;\&quot;left\&quot;&apos; id=&quot;pyFlowActionHTML&quot; base_ref=&quot;D_pzReportBrowser7&quot; name=&quot;BASE_REF&quot; prim_page=&quot;D_pzReportBrowser7&quot; fa_title=&quot;        Create new category       &quot; locked=&quot;&quot; thread_name=&quot;TABTHREAD0&quot; temp_assign_ref=&quot;&quot; temp_base_ref=&quot;&quot;&gt;    &lt;!-- include the flowaction HTML--&gt;  &lt;!-- When there is no interest page, just show the stream --&gt;             
+&lt;div class=&quot;sectionDivStyle &quot; id=&quot;RULE_KEY&quot; version=&quot;1&quot; node_name=&quot;pzNewCategory7&quot; data-template=&quot;&quot; data-node-id=&quot;pzNewCategory7&quot; uniqueid=&quot;SID1541575649227&quot; expandrl=&quot;&quot; pyclassname=&quot;Rule-Category&quot; objclass=&quot;Rule-HTML-Section&quot; node_type=&quot;MAIN_RULE&quot; base_ref=&quot;TempNewCategoryPage&quot; name=&quot;BASE_REF&quot; readonly=&quot;false&quot; index=&quot;&quot;&gt;
+  
+    &lt;div class=&quot;layout layout-none&quot; data-template=&quot;&quot; data-layout-id=&quot;&quot;&gt;&lt;div class=&quot;layout-body &quot; section_index=&quot;1&quot;&gt;&lt;div class=&quot; content layout-content-default  content-default clearfix&quot; aria-label=&quot;&quot; bsimplelayout=&quot;true&quot; data-template=&quot;&quot; data-methodname=&quot;&quot;&gt;&lt;div class=&quot;content-item content-field item-1&quot; string_type=&quot;field&quot; data-template=&quot;&quot; reserve_space=&quot;false&quot;&gt;&lt;div class=&quot;content-inner &quot;&gt;&lt;label class=&quot;field-caption dataLabelForWrite&quot; for=&quot;pyCategoryName&quot;&gt;&lt;span class=&quot;iconRequired standard_iconRequired&quot;&gt;Category name&lt;/span&gt;&lt;strong class=&quot;required-field-accessibility&quot;&gt;Required&lt;/strong&gt;&lt;/label&gt;&lt;div class=&quot;field-item dataValueWrite&quot;&gt;&lt;span nowrap=&quot;&quot;&gt;&lt;input name=&quot;$PTempNewCategoryPage$ppyCategoryName&quot; title=&quot;&quot; class=&quot;leftJustifyStyle ErrorShade&quot; id=&quot;pyCategoryName&quot; type=&quot;text&quot; maxlength=&quot;64&quot; placeholder=&quot;&quot; value=&quot;RepCat10&quot; data-ctl=&apos;[&quot;TextInput&quot;]&apos; data-template=&quot;&quot; data-test-id=&quot;2015032317351300171546&quot; data-change=&apos;[[&quot;refresh&quot;, [&quot;thisSection&quot;,&quot;&quot;, &quot;&quot;, &quot;&amp;amp;=&quot;, &quot;&quot;, &quot;pzCategorySetup,&quot;,&quot;:event&quot;,&quot;&quot;,&quot;TempNewCategoryPage&quot;]]]&apos; validationtype=&quot;javaidentifier,identifier,required&quot;&gt;&lt;div class=&quot;iconErrorDiv dynamic-icon-error-div&quot; id=&quot;$PTempNewCategoryPage$ppyCategoryNameError&quot;&gt;&lt;span class=&quot;iconError dynamic-icon-error&quot; id=&quot;PegaRULESErrorFlag&quot; errid=&quot;&quot;&gt;Category already exists with same name&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;content-item content-field item-2&quot; string_type=&quot;field&quot; data-template=&quot;&quot; reserve_space=&quot;false&quot;&gt;&lt;div class=&quot;content-inner &quot;&gt;&lt;label class=&quot;field-caption dataLabelForWrite&quot; for=&quot;pyCategoryDescription&quot;&gt;&lt;span class=&quot;iconRequired standard_iconRequired&quot;&gt;Category description&lt;/span&gt;&lt;strong class=&quot;required-field-accessibility&quot;&gt;Required&lt;/strong&gt;&lt;/label&gt;&lt;div class=&quot;field-item dataValueWrite&quot;&gt;&lt;span nowrap=&quot;&quot;&gt;&lt;input name=&quot;$PTempNewCategoryPage$ppyCategoryDescription&quot; title=&quot;&quot; class=&quot;leftJustifyStyle&quot; id=&quot;pyCategoryDescription&quot; type=&quot;text&quot; maxlength=&quot;256&quot; placeholder=&quot;&quot; value=&quot;RepCatDesc10&quot; data-ctl=&apos;[&quot;TextInput&quot;]&apos; data-template=&quot;&quot; data-test-id=&quot;2015032317351300172566&quot; data-change=&apos;[[&quot;refresh&quot;, [&quot;thisSection&quot;,&quot;&quot;, &quot;&quot;, &quot;&amp;amp;=&quot;, &quot;&quot;, &quot;,&quot;,&quot;:event&quot;,&quot;&quot;,&quot;TempNewCategoryPage&quot;]]]&apos; validationtype=&quot;required&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;content-item content-field item-3&quot; string_type=&quot;field&quot; data-template=&quot;&quot; reserve_space=&quot;false&quot;&gt;&lt;div class=&quot;content-inner &quot;&gt;&lt;label class=&quot;field-caption dataLabelForWrite&quot; for=&quot;pyOwnerType&quot;&gt;&lt;span class=&quot;iconRequired standard_iconRequired&quot;&gt;Category type&lt;/span&gt;&lt;strong class=&quot;required-field-accessibility&quot;&gt;Required&lt;/strong&gt;&lt;/label&gt;&lt;div class=&quot;field-item dataValueWrite&quot;&gt;&lt;select name=&quot;$PTempNewCategoryPage$ppyOwnerType&quot; id=&quot;pyOwnerType&quot; style=&quot;width: auto;&quot; data-ctl=&apos;[&quot;Dropdown&quot;]&apos; data-template=&quot;&quot; data-test-id=&quot;2015032317351300183425&quot; data-change=&apos;[[&quot;setValue&quot;, [[&quot;TempNewCategoryPage.pyCategoryName&quot;, &quot;&quot;, &quot;TempNewCategoryPage.pyCategoryName&quot;, &quot;&quot;,&quot;#~TempNewCategoryPage.pyCategoryName~#&quot;], [&quot;TempNewCategoryPage.pyCategoryDescription&quot;, &quot;&quot;, &quot;TempNewCategoryPage.pyCategoryDescription&quot;, &quot;&quot;,&quot;#~TempNewCategoryPage.pyCategoryDescription~#&quot;]]]]&apos; validationtype=&quot;identifier,required&quot;&gt;&lt;option title=&quot;&quot; value=&quot;S&quot; selected=&quot;&quot;&gt;Public&lt;/option&gt;&lt;option title=&quot;&quot; value=&quot;P&quot;&gt;Private&lt;/option&gt;&lt;/select&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+  
+    &lt;span class=&quot;inspector-span&quot; data-template=&quot;&quot; data-ui-meta=&quot;{&apos;type&apos;:&apos;Layout&apos;,&apos;subType&apos;:&apos;DYNAMICLAYOUT&apos;,&apos;pgRef&apos;:&apos;.pySections(1)&apos;}&quot;&gt;&lt;div class=&quot;sectionDivStyle &quot; id=&quot;RULE_KEY&quot; version=&quot;1&quot; node_name=&quot;DisplayRFHarnessErrors&quot; data-template=&quot;&quot; data-node-id=&quot;DisplayRFHarnessErrors&quot; uniqueid=&quot;SID1541575649228&quot; expandrl=&quot;&quot; pyclassname=&quot;@baseclass&quot; objclass=&quot;Rule-HTML-Section&quot; node_type=&quot;MAIN_RULE&quot; base_ref=&quot;&quot; name=&quot;BASE_REF&quot; readonly=&quot;false&quot; index=&quot;&quot;&gt;&lt;div class=&quot;layout layout-noheader layout-noheader-errors  clear-floated-layouts&quot; data-template=&quot;&quot; data-layout-id=&quot;&quot;&gt;&lt;div class=&quot;layout-body clearfix &quot; section_index=&quot;1&quot;&gt;&lt;div class=&quot; content layout-content-inline_middle  content-inline_middle clearfix&quot; aria-label=&quot;&quot; bsimplelayout=&quot;true&quot; data-template=&quot;&quot; data-methodname=&quot;&quot;&gt;&lt;div class=&quot;content-item content-sub_section item-1 remove-all-spacing&quot; string_type=&quot;sub_section&quot; data-template=&quot;&quot; reserve_space=&quot;false&quot;&gt;&lt;div class=&quot;content-inner &quot;&gt;&lt;div class=&quot;custom_iconError&quot; &quot;=&quot;&quot;&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Category name&lt;/b&gt;:&lt;div class=&quot;custom_text&quot;&gt; Category already exists with same name&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/span&gt;
+  
+&lt;/div&gt;
+&lt;span id=&quot;pzFlowActionUITypeRef&quot; style=&quot;display: none;&quot; uiref=&quot;pzNewCategory7&quot; uitype=&quot;Rule-HTML-Section&quot;&gt;&lt;/span&gt;           &lt;/div&gt;          
+
+                      &lt;/div&gt;&lt;/td&gt;
+							&lt;/tr&gt;
+							&lt;/tbody&gt;&lt;/table&gt;&lt;input name=&quot;EXPANDEDSubSectionpyReportBrowserTemplateB&quot; id=&quot;EXPAND-INDICATOR&quot; type=&quot;hidden&quot; value=&quot;&quot;&gt;&lt;div class=&quot;yui-resize-handle yui-resize-handle-br&quot; id=&quot;yui-gen6&quot;&gt;&lt;div class=&quot;yui-resize-handle-inner-br&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;yui-resize-proxy&quot; style=&quot;width: 323px; height: 289px;&quot;&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+  
+    &lt;div class=&quot;layout layout-noheader layout-noheader-modal_button_array&quot; data-template=&quot;&quot; data-layout-id=&quot;&quot;&gt;&lt;div class=&quot;layout-body clearfix &quot; section_index=&quot;2&quot;&gt;&lt;div class=&quot; content layout-content-stacked  content-stacked auto-width-column  clearfix&quot; aria-label=&quot;&quot; bsimplelayout=&quot;true&quot; data-template=&quot;&quot; data-methodname=&quot;&quot;&gt;&lt;div class=&quot;content-item content-layout item-1 remove-all-spacing float-left set-width-auto&quot; string_type=&quot;layout&quot; data-template=&quot;&quot; reserve_space=&quot;false&quot;&gt;&lt;div class=&quot;content-inner &quot;&gt;&lt;div class=&quot;layout layout-none&quot; data-template=&quot;&quot; data-layout-id=&quot;&quot;&gt;&lt;div class=&quot;layout-body clearfix &quot; section_index=&quot;5&quot;&gt;&lt;div class=&quot; content layout-content-inline_middle  content-inline_middle set-width-auto   clearfix&quot; aria-label=&quot;&quot; bsimplelayout=&quot;true&quot; data-template=&quot;&quot; data-methodname=&quot;&quot;&gt;&lt;div class=&quot;content-item content-field item-1 remove-all-spacing&quot; string_type=&quot;field&quot; data-template=&quot;&quot; reserve_space=&quot;false&quot;&gt;&lt;div class=&quot;content-inner &quot;&gt;&lt;label class=&quot;field-caption dataLabelForWrite&quot; for=&quot;pyTemplateInputBox&quot;&gt;&lt;/label&gt;&lt;div class=&quot;field-item dataValueWrite&quot;&gt;&lt;table class=&quot;buttonMainTable Standard&quot; border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;buttonTdLeft&quot; onclick=&quot;if(typeof(pega) !=&apos;undefined&apos; &amp;amp;&amp;amp; pega.u.d) pega.u.d.fireButtonClick(this.parentNode);&quot;&gt;&lt;div class=&quot;buttonLeftContent&quot;&gt;&lt;div class=&quot;buttonLeftContentInner&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;buttonTdMiddle&quot; nowrap=&quot;&quot;&gt;&lt;button class=&quot;buttonTdButton&quot; id=&quot;ModalButtonCancel&quot; onclick=&quot;if(typeof(pega) !=&apos;undefined&apos; &amp;amp;&amp;amp; pega.u.d) setUserStart(); doModalAction(&apos;&apos;,event); &quot; type=&quot;button&quot; data-ctl=&quot;non-auto&quot; pega_version=&quot;HTMLPROPERTY&quot;&gt;  Cancel &lt;/button&gt;&lt;/td&gt;&lt;td class=&quot;buttonTdRight&quot; onclick=&quot;if(typeof(pega) !=&apos;undefined&apos; &amp;amp;&amp;amp; pega.u.d) pega.u.d.fireButtonClick(this.parentNode);&quot;&gt;&lt;div class=&quot;buttonRightContent&quot;&gt;&lt;div class=&quot;buttonRightContentInner&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;content-item content-layout item-2 remove-all-spacing float-right set-width-auto&quot; string_type=&quot;layout&quot; data-template=&quot;&quot; reserve_space=&quot;false&quot;&gt;&lt;div class=&quot;content-inner &quot;&gt;&lt;div class=&quot;layout layout-none&quot; data-template=&quot;&quot; data-layout-id=&quot;&quot;&gt;&lt;div class=&quot;layout-body clearfix &quot; section_index=&quot;8&quot;&gt;&lt;div class=&quot; content layout-content-inline_middle  content-inline_middle set-width-auto   clearfix&quot; aria-label=&quot;&quot; bsimplelayout=&quot;true&quot; data-template=&quot;&quot; data-methodname=&quot;&quot;&gt;&lt;div class=&quot;content-item content-field item-1 remove-all-spacing&quot; string_type=&quot;field&quot; data-template=&quot;&quot; reserve_space=&quot;false&quot;&gt;&lt;div class=&quot;content-inner &quot;&gt;&lt;label class=&quot;field-caption dataLabelForWrite&quot; for=&quot;pyTemplateInputBox&quot;&gt;&lt;/label&gt;&lt;div class=&quot;field-item dataValueWrite&quot;&gt;&lt;table class=&quot;buttonMainTable Strong&quot; border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;buttonTdLeft&quot; onclick=&quot;if(typeof(pega) !=&apos;undefined&apos; &amp;amp;&amp;amp; pega.u.d) pega.u.d.fireButtonClick(this.parentNode);&quot;&gt;&lt;div class=&quot;buttonLeftContent&quot;&gt;&lt;div class=&quot;buttonLeftContentInner&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;buttonTdMiddle&quot; nowrap=&quot;&quot;&gt;&lt;button class=&quot;buttonTdButton&quot; id=&quot;ModalButtonSubmit&quot; onclick=&quot;if(typeof(pega) !=&apos;undefined&apos; &amp;amp;&amp;amp; pega.u.d) setUserStart(); doModalAction(pega.u.d.submitModalDlgParam,event); &quot; type=&quot;button&quot; data-ctl=&quot;non-auto&quot; pega_version=&quot;HTMLPROPERTY&quot;&gt;  Submit &lt;/button&gt;&lt;/td&gt;&lt;td class=&quot;buttonTdRight&quot; onclick=&quot;if(typeof(pega) !=&apos;undefined&apos; &amp;amp;&amp;amp; pega.u.d) pega.u.d.fireButtonClick(this.parentNode);&quot;&gt;&lt;div class=&quot;buttonRightContent&quot;&gt;&lt;div class=&quot;buttonRightContentInner&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+  
+&lt;/div&gt;
+&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;L-156141652&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:35081/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: dd782e84-074f-476f-820d-b6e6dcecfe62
+	at junit.framework.Assert.fail(Assert.java:47)
+	at LibraryFiles.ReUsableLibrary.createAReport(ReUsableLibrary.java:1135)
+	at TestScripts.TC07_Reporting.reporting(TC07_Reporting.java:32)
+	at TestScripts.BaseSuiteFile.TC07_Reporting(BaseSuiteFile.java:199)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1129546540", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1129546540'><pre>junit.framework.AssertionFailedError: Report Creation Failed org.openqa.selenium.ElementClickInterceptedException: Element not clickable at point (1187,65). Other element would receive the click: &lt;div class=&quot;modal-align-cell&quot;&gt;
+                    &lt;div class=&quot;modal-wrapper&quot; id=&quot;modalWrapper&quot; role=&quot;dialog&quot; aria-labelledby=&quot;modaldialog_hd_title&quot; style=&quot;width: auto; height: auto;&quot;&gt;
+                        &lt;div class=&quot;modal-content&quot; id=&quot;modalContent&quot; uniqueID=&quot;yui-gen2&quot;&gt;
+&lt;div class=&quot;sectionDivStyle &quot; id=&quot;RULE_KEY&quot; version=&quot;1&quot; node_name=&quot;pyReportBrowserTemplate&quot; data-template=&quot;&quot; data-node-id=&quot;pyReportBrowserTemplate&quot; uniqueid=&quot;SID1541575649226&quot; expandrl=&quot;&quot; pyclassname=&quot;Data-Report-Browser&quot; objclass=&quot;Rule-HTML-Section&quot; node_type=&quot;MAIN_RULE&quot; base_ref=&quot;&quot; name=&quot;BASE_REF&quot; readonly=&quot;false&quot; index=&quot;&quot;&gt;
+  
+    &lt;table class=&quot;customTableBoxStyle&quot; id=&quot;EXPAND-OUTERFRAME&quot; role=&quot;presentation&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; param_name=&quot;EXPANDEDSubSectionpyReportBrowserTemplateB&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;div class=&quot;hd&quot; id=&quot;modaldialog_hd&quot; role=&quot;alert&quot; style=&quot;max-width: 1315px;&quot;&gt;
+	&lt;span id=&quot;modaldialog_hd_title&quot;&gt;        Create new category       &lt;/span&gt;
+	&lt;button name=&quot;ModalHelpButton&quot; title=&quot;&quot; class=&quot;pi pi-help contextual-help&quot; id=&quot;ModalHelpButton&quot; style=&quot;top: 2px; color: rgb(32, 125, 200); margin-left: 2px; display: none; position: absolute;&quot; onclick=&quot;displayHelp(event)&quot;&gt;&lt;/button&gt;
+	&lt;button title=&quot;close modal&quot; class=&quot;container-close&quot; id=&quot;container_close&quot; type=&quot;button&quot;&gt;&lt;/button&gt;
+&lt;/div&gt;&lt;div class=&quot;customExpandInnerDivStyle yui-resize modal-scroll-panel&quot; id=&quot;yui-gen5&quot; style=&quot;max-height: 475px; max-width: 1287px;&quot; section_index=&quot;1&quot;&gt;&lt;table width=&quot;100%&quot; role=&quot;presentation&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+							&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;dataLabelWrite&quot; style=&quot;width: 100%; min-width: 250px;&quot;&gt;&lt;div id=&quot;modaldialog_con&quot;&gt;   &lt;div align=&apos;\&quot;left\&quot;&apos; id=&quot;pyFlowActionHTML&quot; base_ref=&quot;D_pzReportBrowser7&quot; name=&quot;BASE_REF&quot; prim_page=&quot;D_pzReportBrowser7&quot; fa_title=&quot;        Create new category       &quot; locked=&quot;&quot; thread_name=&quot;TABTHREAD0&quot; temp_assign_ref=&quot;&quot; temp_base_ref=&quot;&quot;&gt;    &lt;!-- include the flowaction HTML--&gt;  &lt;!-- When there is no interest page, just show the stream --&gt;             
+&lt;div class=&quot;sectionDivStyle &quot; id=&quot;RULE_KEY&quot; version=&quot;1&quot; node_name=&quot;pzNewCategory7&quot; data-template=&quot;&quot; data-node-id=&quot;pzNewCategory7&quot; uniqueid=&quot;SID1541575649227&quot; expandrl=&quot;&quot; pyclassname=&quot;Rule-Category&quot; objclass=&quot;Rule-HTML-Section&quot; node_type=&quot;MAIN_RULE&quot; base_ref=&quot;TempNewCategoryPage&quot; name=&quot;BASE_REF&quot; readonly=&quot;false&quot; index=&quot;&quot;&gt;
+  
+    &lt;div class=&quot;layout layout-none&quot; data-template=&quot;&quot; data-layout-id=&quot;&quot;&gt;&lt;div class=&quot;layout-body &quot; section_index=&quot;1&quot;&gt;&lt;div class=&quot; content layout-content-default  content-default clearfix&quot; aria-label=&quot;&quot; bsimplelayout=&quot;true&quot; data-template=&quot;&quot; data-methodname=&quot;&quot;&gt;&lt;div class=&quot;content-item content-field item-1&quot; string_type=&quot;field&quot; data-template=&quot;&quot; reserve_space=&quot;false&quot;&gt;&lt;div class=&quot;content-inner &quot;&gt;&lt;label class=&quot;field-caption dataLabelForWrite&quot; for=&quot;pyCategoryName&quot;&gt;&lt;span class=&quot;iconRequired standard_iconRequired&quot;&gt;Category name&lt;/span&gt;&lt;strong class=&quot;required-field-accessibility&quot;&gt;Required&lt;/strong&gt;&lt;/label&gt;&lt;div class=&quot;field-item dataValueWrite&quot;&gt;&lt;span nowrap=&quot;&quot;&gt;&lt;input name=&quot;$PTempNewCategoryPage$ppyCategoryName&quot; title=&quot;&quot; class=&quot;leftJustifyStyle ErrorShade&quot; id=&quot;pyCategoryName&quot; type=&quot;text&quot; maxlength=&quot;64&quot; placeholder=&quot;&quot; value=&quot;RepCat10&quot; data-ctl=&apos;[&quot;TextInput&quot;]&apos; data-template=&quot;&quot; data-test-id=&quot;2015032317351300171546&quot; data-change=&apos;[[&quot;refresh&quot;, [&quot;thisSection&quot;,&quot;&quot;, &quot;&quot;, &quot;&amp;amp;=&quot;, &quot;&quot;, &quot;pzCategorySetup,&quot;,&quot;:event&quot;,&quot;&quot;,&quot;TempNewCategoryPage&quot;]]]&apos; validationtype=&quot;javaidentifier,identifier,required&quot;&gt;&lt;div class=&quot;iconErrorDiv dynamic-icon-error-div&quot; id=&quot;$PTempNewCategoryPage$ppyCategoryNameError&quot;&gt;&lt;span class=&quot;iconError dynamic-icon-error&quot; id=&quot;PegaRULESErrorFlag&quot; errid=&quot;&quot;&gt;Category already exists with same name&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;content-item content-field item-2&quot; string_type=&quot;field&quot; data-template=&quot;&quot; reserve_space=&quot;false&quot;&gt;&lt;div class=&quot;content-inner &quot;&gt;&lt;label class=&quot;field-caption dataLabelForWrite&quot; for=&quot;pyCategoryDescription&quot;&gt;&lt;span class=&quot;iconRequired standard_iconRequired&quot;&gt;Category description&lt;/span&gt;&lt;strong class=&quot;required-field-accessibility&quot;&gt;Required&lt;/strong&gt;&lt;/label&gt;&lt;div class=&quot;field-item dataValueWrite&quot;&gt;&lt;span nowrap=&quot;&quot;&gt;&lt;input name=&quot;$PTempNewCategoryPage$ppyCategoryDescription&quot; title=&quot;&quot; class=&quot;leftJustifyStyle&quot; id=&quot;pyCategoryDescription&quot; type=&quot;text&quot; maxlength=&quot;256&quot; placeholder=&quot;&quot; value=&quot;RepCatDesc10&quot; data-ctl=&apos;[&quot;TextInput&quot;]&apos; data-template=&quot;&quot; data-test-id=&quot;2015032317351300172566&quot; data-change=&apos;[[&quot;refresh&quot;, [&quot;thisSection&quot;,&quot;&quot;, &quot;&quot;, &quot;&amp;amp;=&quot;, &quot;&quot;, &quot;,&quot;,&quot;:event&quot;,&quot;&quot;,&quot;TempNewCategoryPage&quot;]]]&apos; validationtype=&quot;required&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;content-item content-field item-3&quot; string_type=&quot;field&quot; data-template=&quot;&quot; reserve_space=&quot;false&quot;&gt;&lt;div class=&quot;content-inner &quot;&gt;&lt;label class=&quot;field-caption dataLabelForWrite&quot; for=&quot;pyOwnerType&quot;&gt;&lt;span class=&quot;iconRequired standard_iconRequired&quot;&gt;Category type&lt;/span&gt;&lt;strong class=&quot;required-field-accessibility&quot;&gt;Required&lt;/strong&gt;&lt;/label&gt;&lt;div class=&quot;field-item dataValueWrite&quot;&gt;&lt;select name=&quot;$PTempNewCategoryPage$ppyOwnerType&quot; id=&quot;pyOwnerType&quot; style=&quot;width: auto;&quot; data-ctl=&apos;[&quot;Dropdown&quot;]&apos; data-template=&quot;&quot; data-test-id=&quot;2015032317351300183425&quot; data-change=&apos;[[&quot;setValue&quot;, [[&quot;TempNewCategoryPage.pyCategoryName&quot;, &quot;&quot;, &quot;TempNewCategoryPage.pyCategoryName&quot;, &quot;&quot;,&quot;#~TempNewCategoryPage.pyCategoryName~#&quot;], [&quot;TempNewCategoryPage.pyCategoryDescription&quot;, &quot;&quot;, &quot;TempNewCategoryPage.pyCategoryDescription&quot;, &quot;&quot;,&quot;#~TempNewCategoryPage.pyCategoryDescription~#&quot;]]]]&apos; validationtype=&quot;identifier,required&quot;&gt;&lt;option title=&quot;&quot; value=&quot;S&quot; selected=&quot;&quot;&gt;Public&lt;/option&gt;&lt;option title=&quot;&quot; value=&quot;P&quot;&gt;Private&lt;/option&gt;&lt;/select&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+  
+    &lt;span class=&quot;inspector-span&quot; data-template=&quot;&quot; data-ui-meta=&quot;{&apos;type&apos;:&apos;Layout&apos;,&apos;subType&apos;:&apos;DYNAMICLAYOUT&apos;,&apos;pgRef&apos;:&apos;.pySections(1)&apos;}&quot;&gt;&lt;div class=&quot;sectionDivStyle &quot; id=&quot;RULE_KEY&quot; version=&quot;1&quot; node_name=&quot;DisplayRFHarnessErrors&quot; data-template=&quot;&quot; data-node-id=&quot;DisplayRFHarnessErrors&quot; uniqueid=&quot;SID1541575649228&quot; expandrl=&quot;&quot; pyclassname=&quot;@baseclass&quot; objclass=&quot;Rule-HTML-Section&quot; node_type=&quot;MAIN_RULE&quot; base_ref=&quot;&quot; name=&quot;BASE_REF&quot; readonly=&quot;false&quot; index=&quot;&quot;&gt;&lt;div class=&quot;layout layout-noheader layout-noheader-errors  clear-floated-layouts&quot; data-template=&quot;&quot; data-layout-id=&quot;&quot;&gt;&lt;div class=&quot;layout-body clearfix &quot; section_index=&quot;1&quot;&gt;&lt;div class=&quot; content layout-content-inline_middle  content-inline_middle clearfix&quot; aria-label=&quot;&quot; bsimplelayout=&quot;true&quot; data-template=&quot;&quot; data-methodname=&quot;&quot;&gt;&lt;div class=&quot;content-item content-sub_section item-1 remove-all-spacing&quot; string_type=&quot;sub_section&quot; data-template=&quot;&quot; reserve_space=&quot;false&quot;&gt;&lt;div class=&quot;content-inner &quot;&gt;&lt;div class=&quot;custom_iconError&quot; &quot;=&quot;&quot;&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Category name&lt;/b&gt;:&lt;div class=&quot;custom_text&quot;&gt; Category already exists with same name&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/span&gt;
+  
+&lt;/div&gt;
+&lt;span id=&quot;pzFlowActionUITypeRef&quot; style=&quot;display: none;&quot; uiref=&quot;pzNewCategory7&quot; uitype=&quot;Rule-HTML-Section&quot;&gt;&lt;/span&gt;           &lt;/div&gt;          
+
+                      &lt;/div&gt;&lt;/td&gt;
+							&lt;/tr&gt;
+							&lt;/tbody&gt;&lt;/table&gt;&lt;input name=&quot;EXPANDEDSubSectionpyReportBrowserTemplateB&quot; id=&quot;EXPAND-INDICATOR&quot; type=&quot;hidden&quot; value=&quot;&quot;&gt;&lt;div class=&quot;yui-resize-handle yui-resize-handle-br&quot; id=&quot;yui-gen6&quot;&gt;&lt;div class=&quot;yui-resize-handle-inner-br&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;yui-resize-proxy&quot; style=&quot;width: 323px; height: 289px;&quot;&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+  
+    &lt;div class=&quot;layout layout-noheader layout-noheader-modal_button_array&quot; data-template=&quot;&quot; data-layout-id=&quot;&quot;&gt;&lt;div class=&quot;layout-body clearfix &quot; section_index=&quot;2&quot;&gt;&lt;div class=&quot; content layout-content-stacked  content-stacked auto-width-column  clearfix&quot; aria-label=&quot;&quot; bsimplelayout=&quot;true&quot; data-template=&quot;&quot; data-methodname=&quot;&quot;&gt;&lt;div class=&quot;content-item content-layout item-1 remove-all-spacing float-left set-width-auto&quot; string_type=&quot;layout&quot; data-template=&quot;&quot; reserve_space=&quot;false&quot;&gt;&lt;div class=&quot;content-inner &quot;&gt;&lt;div class=&quot;layout layout-none&quot; data-template=&quot;&quot; data-layout-id=&quot;&quot;&gt;&lt;div class=&quot;layout-body clearfix &quot; section_index=&quot;5&quot;&gt;&lt;div class=&quot; content layout-content-inline_middle  content-inline_middle set-width-auto   clearfix&quot; aria-label=&quot;&quot; bsimplelayout=&quot;true&quot; data-template=&quot;&quot; data-methodname=&quot;&quot;&gt;&lt;div class=&quot;content-item content-field item-1 remove-all-spacing&quot; string_type=&quot;field&quot; data-template=&quot;&quot; reserve_space=&quot;false&quot;&gt;&lt;div class=&quot;content-inner &quot;&gt;&lt;label class=&quot;field-caption dataLabelForWrite&quot; for=&quot;pyTemplateInputBox&quot;&gt;&lt;/label&gt;&lt;div class=&quot;field-item dataValueWrite&quot;&gt;&lt;table class=&quot;buttonMainTable Standard&quot; border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;buttonTdLeft&quot; onclick=&quot;if(typeof(pega) !=&apos;undefined&apos; &amp;amp;&amp;amp; pega.u.d) pega.u.d.fireButtonClick(this.parentNode);&quot;&gt;&lt;div class=&quot;buttonLeftContent&quot;&gt;&lt;div class=&quot;buttonLeftContentInner&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;buttonTdMiddle&quot; nowrap=&quot;&quot;&gt;&lt;button class=&quot;buttonTdButton&quot; id=&quot;ModalButtonCancel&quot; onclick=&quot;if(typeof(pega) !=&apos;undefined&apos; &amp;amp;&amp;amp; pega.u.d) setUserStart(); doModalAction(&apos;&apos;,event); &quot; type=&quot;button&quot; data-ctl=&quot;non-auto&quot; pega_version=&quot;HTMLPROPERTY&quot;&gt;  Cancel &lt;/button&gt;&lt;/td&gt;&lt;td class=&quot;buttonTdRight&quot; onclick=&quot;if(typeof(pega) !=&apos;undefined&apos; &amp;amp;&amp;amp; pega.u.d) pega.u.d.fireButtonClick(this.parentNode);&quot;&gt;&lt;div class=&quot;buttonRightContent&quot;&gt;&lt;div class=&quot;buttonRightContentInner&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;content-item content-layout item-2 remove-all-spacing float-right set-width-auto&quot; string_type=&quot;layout&quot; data-template=&quot;&quot; reserve_space=&quot;false&quot;&gt;&lt;div class=&quot;content-inner &quot;&gt;&lt;div class=&quot;layout layout-none&quot; data-template=&quot;&quot; data-layout-id=&quot;&quot;&gt;&lt;div class=&quot;layout-body clearfix &quot; section_index=&quot;8&quot;&gt;&lt;div class=&quot; content layout-content-inline_middle  content-inline_middle set-width-auto   clearfix&quot; aria-label=&quot;&quot; bsimplelayout=&quot;true&quot; data-template=&quot;&quot; data-methodname=&quot;&quot;&gt;&lt;div class=&quot;content-item content-field item-1 remove-all-spacing&quot; string_type=&quot;field&quot; data-template=&quot;&quot; reserve_space=&quot;false&quot;&gt;&lt;div class=&quot;content-inner &quot;&gt;&lt;label class=&quot;field-caption dataLabelForWrite&quot; for=&quot;pyTemplateInputBox&quot;&gt;&lt;/label&gt;&lt;div class=&quot;field-item dataValueWrite&quot;&gt;&lt;table class=&quot;buttonMainTable Strong&quot; border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;buttonTdLeft&quot; onclick=&quot;if(typeof(pega) !=&apos;undefined&apos; &amp;amp;&amp;amp; pega.u.d) pega.u.d.fireButtonClick(this.parentNode);&quot;&gt;&lt;div class=&quot;buttonLeftContent&quot;&gt;&lt;div class=&quot;buttonLeftContentInner&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;buttonTdMiddle&quot; nowrap=&quot;&quot;&gt;&lt;button class=&quot;buttonTdButton&quot; id=&quot;ModalButtonSubmit&quot; onclick=&quot;if(typeof(pega) !=&apos;undefined&apos; &amp;amp;&amp;amp; pega.u.d) setUserStart(); doModalAction(pega.u.d.submitModalDlgParam,event); &quot; type=&quot;button&quot; data-ctl=&quot;non-auto&quot; pega_version=&quot;HTMLPROPERTY&quot;&gt;  Submit &lt;/button&gt;&lt;/td&gt;&lt;td class=&quot;buttonTdRight&quot; onclick=&quot;if(typeof(pega) !=&apos;undefined&apos; &amp;amp;&amp;amp; pega.u.d) pega.u.d.fireButtonClick(this.parentNode);&quot;&gt;&lt;div class=&quot;buttonRightContent&quot;&gt;&lt;div class=&quot;buttonRightContentInner&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+  
+&lt;/div&gt;
+&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;L-156141652&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:35081/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: dd782e84-074f-476f-820d-b6e6dcecfe62
+	at junit.framework.Assert.fail(Assert.java:47)
+	at LibraryFiles.ReUsableLibrary.createAReport(ReUsableLibrary.java:1135)
+	at TestScripts.TC07_Reporting.reporting(TC07_Reporting.java:32)
+	at TestScripts.BaseSuiteFile.TC07_Reporting(BaseSuiteFile.java:199)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>28</td>
+<td>TestScripts.BaseSuiteFile@3cce5371</td></tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC08_WorkFlowCSV()'><b>TC08_WorkFlowCSV</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: WorkFlow Client Side Validations</td>
+<td><div><pre>junit.framework.AssertionFailedError: Client Side Validations Failedorg.openqa.selenium.NoAlertPresentException: No alert is active
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;L-156141652&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:39763/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: d83c7385-3c98-42cc-82dd-dc4f9cff20e7
+	at junit.framework.Assert.fail(Assert.java:47)
+	at LibraryFiles.ReUsableLibrary.clientSideValidations(ReUsableLibrary.java:1193)
+	at TestScripts.TC08_WorkFlowCSV.CSV(TC08_WorkFlowCSV.java:13)
+	at TestScripts.BaseSuiteFile.TC08_WorkFlowCSV(BaseSuiteFile.java:204)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1760123453", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1760123453'><pre>junit.framework.AssertionFailedError: Client Side Validations Failedorg.openqa.selenium.NoAlertPresentException: No alert is active
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;L-156141652&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:39763/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: d83c7385-3c98-42cc-82dd-dc4f9cff20e7
+	at junit.framework.Assert.fail(Assert.java:47)
+	at LibraryFiles.ReUsableLibrary.clientSideValidations(ReUsableLibrary.java:1193)
+	at TestScripts.TC08_WorkFlowCSV.CSV(TC08_WorkFlowCSV.java:13)
+	at TestScripts.BaseSuiteFile.TC08_WorkFlowCSV(BaseSuiteFile.java:204)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>33</td>
+<td>TestScripts.BaseSuiteFile@3cce5371</td></tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC10_validateSLA()'><b>TC10_validateSLA</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: Validate SLA</td>
+<td><div><pre>junit.framework.AssertionFailedError: New Assignment Creation Failedorg.openqa.selenium.ElementNotInteractableException: Element is not displayed
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;L-156141652&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:40156/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 02c04df9-a03a-4391-99b8-a7e3ba5cbe1b
+	at junit.framework.Assert.fail(Assert.java:47)
+	at LibraryFiles.ReUsableLibrary.createNewAssignment(ReUsableLibrary.java:1281)
+	at TestScripts.TC10_validateSLA.validateSLA(TC10_validateSLA.java:18)
+	at TestScripts.BaseSuiteFile.TC10_validateSLA(BaseSuiteFile.java:214)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1024497660", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1024497660'><pre>junit.framework.AssertionFailedError: New Assignment Creation Failedorg.openqa.selenium.ElementNotInteractableException: Element is not displayed
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;L-156141652&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:40156/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 02c04df9-a03a-4391-99b8-a7e3ba5cbe1b
+	at junit.framework.Assert.fail(Assert.java:47)
+	at LibraryFiles.ReUsableLibrary.createNewAssignment(ReUsableLibrary.java:1281)
+	at TestScripts.TC10_validateSLA.validateSLA(TC10_validateSLA.java:18)
+	at TestScripts.BaseSuiteFile.TC10_validateSLA(BaseSuiteFile.java:214)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>13</td>
+<td>TestScripts.BaseSuiteFile@3cce5371</td></tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC11_E2EFlowInMultiBrowsers()'><b>TC11_E2EFlowInMultiBrowsers</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: Validate End To End Flows in Different Browsers</td>
+<td><div><pre>junit.framework.AssertionFailedError: Decisions are NOT correctly displayed in Approval Pageorg.openqa.selenium.ElementNotInteractableException: Element is not displayed
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;L-156141652&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:23695/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 80cb4d95-f4bd-4d71-a16e-16ece1e64686
+	at junit.framework.Assert.fail(Assert.java:47)
+	at TestScripts.TC11_E2EFlowInMultiBrowsers.e2eFlowInMultiBrowsers(TC11_E2EFlowInMultiBrowsers.java:79)
+	at TestScripts.BaseSuiteFile.TC11_E2EFlowInMultiBrowsers(BaseSuiteFile.java:219)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace605922015", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace605922015'><pre>junit.framework.AssertionFailedError: Decisions are NOT correctly displayed in Approval Pageorg.openqa.selenium.ElementNotInteractableException: Element is not displayed
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;L-156141652&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:23695/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 80cb4d95-f4bd-4d71-a16e-16ece1e64686
+	at junit.framework.Assert.fail(Assert.java:47)
+	at TestScripts.TC11_E2EFlowInMultiBrowsers.e2eFlowInMultiBrowsers(TC11_E2EFlowInMultiBrowsers.java:79)
+	at TestScripts.BaseSuiteFile.TC11_E2EFlowInMultiBrowsers(BaseSuiteFile.java:219)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>8</td>
+<td>TestScripts.BaseSuiteFile@3cce5371</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC01_UserLogin()'><b>TC01_UserLogin</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: Login to The Portal using User Logins</td>
+<td></td>
+<td>9</td>
+<td>TestScripts.BaseSuiteFile@3cce5371</td></tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC02_ManagerLogin()'><b>TC02_ManagerLogin</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: Login to The Portal using Manager Logins</td>
+<td></td>
+<td>10</td>
+<td>TestScripts.BaseSuiteFile@3cce5371</td></tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC04_LoginWithDiffUsers()'><b>TC04_LoginWithDiffUsers</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: Login to The Portal using different Logins from the dataprovider<br>Parameters: loanccdemouser1, rules</td>
+<td></td>
+<td>14</td>
+<td>TestScripts.BaseSuiteFile@3cce5371</td></tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC04_LoginWithDiffUsers()'><b>TC04_LoginWithDiffUsers</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: Login to The Portal using different Logins from the dataprovider<br>Parameters: loanccdemomanager1, rules</td>
+<td></td>
+<td>18</td>
+<td>TestScripts.BaseSuiteFile@3cce5371</td></tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC04_LoginWithDiffUsers()'><b>TC04_LoginWithDiffUsers</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: Login to The Portal using different Logins from the dataprovider<br>Parameters: admin.loancc, rules</td>
+<td></td>
+<td>21</td>
+<td>TestScripts.BaseSuiteFile@3cce5371</td></tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC06_BusinessRulesAndDecisioning()'><b>TC06_BusinessRulesAndDecisioning</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: Business Rules And Decisioning<br>Parameters: 1000, Credit Card, Approved, Approved, Approved</td>
+<td></td>
+<td>55</td>
+<td>TestScripts.BaseSuiteFile@3cce5371</td></tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC06_BusinessRulesAndDecisioning()'><b>TC06_BusinessRulesAndDecisioning</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: Business Rules And Decisioning<br>Parameters: 260000, Credit Card, Approved, Approved, Rejected</td>
+<td></td>
+<td>47</td>
+<td>TestScripts.BaseSuiteFile@3cce5371</td></tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC09_WorkFlowSSV()'><b>TC09_WorkFlowSSV</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: WorkFlow Server Side Validations</td>
+<td></td>
+<td>44</td>
+<td>TestScripts.BaseSuiteFile@3cce5371</td></tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC12_SkillBasedRouting()'><b>TC12_SkillBasedRouting</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: Validate Skill Based Routing</td>
+<td></td>
+<td>0</td>
+<td>TestScripts.BaseSuiteFile@3cce5371</td></tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC13_GetNextWork()'><b>TC13_GetNextWork</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: Validate Get Next Work</td>
+<td></td>
+<td>0</td>
+<td>TestScripts.BaseSuiteFile@3cce5371</td></tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC14_WorkBaskets()'><b>TC14_WorkBaskets</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: Validate WorkBaskets</td>
+<td></td>
+<td>0</td>
+<td>TestScripts.BaseSuiteFile@3cce5371</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC04_Test()'><b>TC04_Test</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: Just for skipping a test</td>
+<td><div><pre>org.testng.SkipException: Skipped Test
+	at TestScripts.BaseSuiteFile.TC04_Test(BaseSuiteFile.java:184)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1107080170", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1107080170'><pre>org.testng.SkipException: Skipped Test
+	at TestScripts.BaseSuiteFile.TC04_Test(BaseSuiteFile.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestScripts.BaseSuiteFile@3cce5371</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,442 @@
+<html>
+<head>
+<title>TestNG:  PhantomJS Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>PhantomJS Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>11/6/1</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Nov 07 12:59:45 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>560 seconds (560474 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC03_NewUserE2EFlow()'><b>TC03_NewUserE2EFlow</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: Login to The Portal using User Logins and create an End to End Flow</td>
+<td><div><pre>junit.framework.AssertionFailedError: Decisions are NOT correctly displayed in Approval Pageorg.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //b[text()=&apos;Customer Data Source&apos;] (tried for 60 second(s) with 500 milliseconds interval)
+	at junit.framework.Assert.fail(Assert.java:47)
+	at TestScripts.TC03_NewUserE2EFlow.NewUserE2EFlow(TC03_NewUserE2EFlow.java:80)
+	at TestScripts.BaseSuiteFile.TC03_NewUserE2EFlow(BaseSuiteFile.java:179)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1243911510", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1243911510'><pre>junit.framework.AssertionFailedError: Decisions are NOT correctly displayed in Approval Pageorg.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //b[text()=&apos;Customer Data Source&apos;] (tried for 60 second(s) with 500 milliseconds interval)
+	at junit.framework.Assert.fail(Assert.java:47)
+	at TestScripts.TC03_NewUserE2EFlow.NewUserE2EFlow(TC03_NewUserE2EFlow.java:80)
+	at TestScripts.BaseSuiteFile.TC03_NewUserE2EFlow(BaseSuiteFile.java:179)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>71</td>
+<td>TestScripts.BaseSuiteFile@48e1f6c7</td></tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC05_RoleBasedSecurity()'><b>TC05_RoleBasedSecurity</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: Role Based Security</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at TestScripts.TC05_RoleBasedSecurity.roleBasedSecurity(TC05_RoleBasedSecurity.java:22)
+	at TestScripts.BaseSuiteFile.TC05_RoleBasedSecurity(BaseSuiteFile.java:189)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace575353870", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace575353870'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:568)
+	at org.testng.Assert.assertEquals(Assert.java:578)
+	at TestScripts.TC05_RoleBasedSecurity.roleBasedSecurity(TC05_RoleBasedSecurity.java:22)
+	at TestScripts.BaseSuiteFile.TC05_RoleBasedSecurity(BaseSuiteFile.java:189)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>6</td>
+<td>TestScripts.BaseSuiteFile@48e1f6c7</td></tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC07_Reporting()'><b>TC07_Reporting</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: Report Category and Report creation With Manager Login</td>
+<td><div><pre>java.lang.AssertionError: Reporting Failedorg.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //h2[text()=&apos;Private categories&apos;] (tried for 60 second(s) with 500 milliseconds interval)
+	at TestScripts.TC07_Reporting.reporting(TC07_Reporting.java:35)
+	at TestScripts.BaseSuiteFile.TC07_Reporting(BaseSuiteFile.java:199)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace303572995", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace303572995'><pre>java.lang.AssertionError: Reporting Failedorg.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //h2[text()=&apos;Private categories&apos;] (tried for 60 second(s) with 500 milliseconds interval)
+	at org.testng.Assert.fail(Assert.java:96)
+	at TestScripts.TC07_Reporting.reporting(TC07_Reporting.java:35)
+	at TestScripts.BaseSuiteFile.TC07_Reporting(BaseSuiteFile.java:199)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>74</td>
+<td>TestScripts.BaseSuiteFile@48e1f6c7</td></tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC08_WorkFlowCSV()'><b>TC08_WorkFlowCSV</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: WorkFlow Client Side Validations</td>
+<td><div><pre>junit.framework.AssertionFailedError: Client Side Validations Failedorg.openqa.selenium.UnsupportedCommandException: Invalid Command Method - {&quot;headers&quot;:{&quot;Accept-Encoding&quot;:&quot;gzip&quot;,&quot;Cache-Control&quot;:&quot;no-cache&quot;,&quot;Connection&quot;:&quot;Keep-Alive&quot;,&quot;Host&quot;:&quot;localhost:12735&quot;,&quot;User-Agent&quot;:&quot;selenium/3.12.0 (java windows)&quot;},&quot;httpVersion&quot;:&quot;1.1&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;url&quot;:&quot;/alert_text&quot;,&quot;urlParsed&quot;:{&quot;anchor&quot;:&quot;&quot;,&quot;query&quot;:&quot;&quot;,&quot;file&quot;:&quot;alert_text&quot;,&quot;directory&quot;:&quot;/&quot;,&quot;path&quot;:&quot;/alert_text&quot;,&quot;relative&quot;:&quot;/alert_text&quot;,&quot;port&quot;:&quot;&quot;,&quot;host&quot;:&quot;&quot;,&quot;password&quot;:&quot;&quot;,&quot;user&quot;:&quot;&quot;,&quot;userInfo&quot;:&quot;&quot;,&quot;authority&quot;:&quot;&quot;,&quot;protocol&quot;:&quot;&quot;,&quot;source&quot;:&quot;/alert_text&quot;,&quot;queryKey&quot;:{},&quot;chunks&quot;:[&quot;alert_text&quot;]},&quot;urlOriginal&quot;:&quot;/session/adc74b90-e25f-11e8-9124-e19998642539/alert_text&quot;}
+Command duration or timeout: 3 milliseconds
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;L-156141652&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.phantomjs.PhantomJSDriver
+Capabilities {acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: phantomjs, cssSelectorsEnabled: true, databaseEnabled: false, driverName: ghostdriver, driverVersion: 1.2.0, handlesAlerts: false, javascriptEnabled: true, locationContextEnabled: false, nativeEvents: true, platform: XP, platformName: XP, proxy: Proxy(direct), rotatable: false, takesScreenshot: true, version: 2.1.1, webStorageEnabled: false}
+Session ID: adc74b90-e25f-11e8-9124-e19998642539
+	at junit.framework.Assert.fail(Assert.java:47)
+	at LibraryFiles.ReUsableLibrary.clientSideValidations(ReUsableLibrary.java:1193)
+	at TestScripts.TC08_WorkFlowCSV.CSV(TC08_WorkFlowCSV.java:13)
+	at TestScripts.BaseSuiteFile.TC08_WorkFlowCSV(BaseSuiteFile.java:204)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace547928750", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace547928750'><pre>junit.framework.AssertionFailedError: Client Side Validations Failedorg.openqa.selenium.UnsupportedCommandException: Invalid Command Method - {&quot;headers&quot;:{&quot;Accept-Encoding&quot;:&quot;gzip&quot;,&quot;Cache-Control&quot;:&quot;no-cache&quot;,&quot;Connection&quot;:&quot;Keep-Alive&quot;,&quot;Host&quot;:&quot;localhost:12735&quot;,&quot;User-Agent&quot;:&quot;selenium/3.12.0 (java windows)&quot;},&quot;httpVersion&quot;:&quot;1.1&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;url&quot;:&quot;/alert_text&quot;,&quot;urlParsed&quot;:{&quot;anchor&quot;:&quot;&quot;,&quot;query&quot;:&quot;&quot;,&quot;file&quot;:&quot;alert_text&quot;,&quot;directory&quot;:&quot;/&quot;,&quot;path&quot;:&quot;/alert_text&quot;,&quot;relative&quot;:&quot;/alert_text&quot;,&quot;port&quot;:&quot;&quot;,&quot;host&quot;:&quot;&quot;,&quot;password&quot;:&quot;&quot;,&quot;user&quot;:&quot;&quot;,&quot;userInfo&quot;:&quot;&quot;,&quot;authority&quot;:&quot;&quot;,&quot;protocol&quot;:&quot;&quot;,&quot;source&quot;:&quot;/alert_text&quot;,&quot;queryKey&quot;:{},&quot;chunks&quot;:[&quot;alert_text&quot;]},&quot;urlOriginal&quot;:&quot;/session/adc74b90-e25f-11e8-9124-e19998642539/alert_text&quot;}
+Command duration or timeout: 3 milliseconds
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;L-156141652&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.phantomjs.PhantomJSDriver
+Capabilities {acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: phantomjs, cssSelectorsEnabled: true, databaseEnabled: false, driverName: ghostdriver, driverVersion: 1.2.0, handlesAlerts: false, javascriptEnabled: true, locationContextEnabled: false, nativeEvents: true, platform: XP, platformName: XP, proxy: Proxy(direct), rotatable: false, takesScreenshot: true, version: 2.1.1, webStorageEnabled: false}
+Session ID: adc74b90-e25f-11e8-9124-e19998642539
+	at junit.framework.Assert.fail(Assert.java:47)
+	at LibraryFiles.ReUsableLibrary.clientSideValidations(ReUsableLibrary.java:1193)
+	at TestScripts.TC08_WorkFlowCSV.CSV(TC08_WorkFlowCSV.java:13)
+	at TestScripts.BaseSuiteFile.TC08_WorkFlowCSV(BaseSuiteFile.java:204)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>29</td>
+<td>TestScripts.BaseSuiteFile@48e1f6c7</td></tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC09_WorkFlowSSV()'><b>TC09_WorkFlowSSV</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: WorkFlow Server Side Validations</td>
+<td><div><pre>junit.framework.AssertionFailedError: Server Side Validations Failedorg.openqa.selenium.NoSuchElementException: {&quot;errorMessage&quot;:&quot;Unable to find element with id &apos;FirstName&apos;&quot;,&quot;request&quot;:{&quot;headers&quot;:{&quot;Accept-Encoding&quot;:&quot;gzip&quot;,&quot;Connection&quot;:&quot;Keep-Alive&quot;,&quot;Content-Length&quot;:&quot;34&quot;,&quot;Content-Type&quot;:&quot;application/json; charset=utf-8&quot;,&quot;Host&quot;:&quot;localhost:46473&quot;,&quot;User-Agent&quot;:&quot;selenium/3.12.0 (java windows)&quot;},&quot;httpVersion&quot;:&quot;1.1&quot;,&quot;method&quot;:&quot;POST&quot;,&quot;post&quot;:&quot;{\&quot;using\&quot;:\&quot;id\&quot;,\&quot;value\&quot;:\&quot;FirstName\&quot;}&quot;,&quot;url&quot;:&quot;/element&quot;,&quot;urlParsed&quot;:{&quot;anchor&quot;:&quot;&quot;,&quot;query&quot;:&quot;&quot;,&quot;file&quot;:&quot;element&quot;,&quot;directory&quot;:&quot;/&quot;,&quot;path&quot;:&quot;/element&quot;,&quot;relative&quot;:&quot;/element&quot;,&quot;port&quot;:&quot;&quot;,&quot;host&quot;:&quot;&quot;,&quot;password&quot;:&quot;&quot;,&quot;user&quot;:&quot;&quot;,&quot;userInfo&quot;:&quot;&quot;,&quot;authority&quot;:&quot;&quot;,&quot;protocol&quot;:&quot;&quot;,&quot;source&quot;:&quot;/element&quot;,&quot;queryKey&quot;:{},&quot;chunks&quot;:[&quot;element&quot;]},&quot;urlOriginal&quot;:&quot;/session/c08f7e00-e25f-11e8-a48a-67b03460ee58/element&quot;}}
+Command duration or timeout: 0 milliseconds
+	at junit.framework.Assert.fail(Assert.java:47)
+	at LibraryFiles.ReUsableLibrary.serverSideValidations(ReUsableLibrary.java:1261)
+	at TestScripts.TC09_WorkFlowSSV.SSV(TC09_WorkFlowSSV.java:13)
+	at TestScripts.BaseSuiteFile.TC09_WorkFlowSSV(BaseSuiteFile.java:209)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace81924417", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace81924417'><pre>junit.framework.AssertionFailedError: Server Side Validations Failedorg.openqa.selenium.NoSuchElementException: {&quot;errorMessage&quot;:&quot;Unable to find element with id &apos;FirstName&apos;&quot;,&quot;request&quot;:{&quot;headers&quot;:{&quot;Accept-Encoding&quot;:&quot;gzip&quot;,&quot;Connection&quot;:&quot;Keep-Alive&quot;,&quot;Content-Length&quot;:&quot;34&quot;,&quot;Content-Type&quot;:&quot;application/json; charset=utf-8&quot;,&quot;Host&quot;:&quot;localhost:46473&quot;,&quot;User-Agent&quot;:&quot;selenium/3.12.0 (java windows)&quot;},&quot;httpVersion&quot;:&quot;1.1&quot;,&quot;method&quot;:&quot;POST&quot;,&quot;post&quot;:&quot;{\&quot;using\&quot;:\&quot;id\&quot;,\&quot;value\&quot;:\&quot;FirstName\&quot;}&quot;,&quot;url&quot;:&quot;/element&quot;,&quot;urlParsed&quot;:{&quot;anchor&quot;:&quot;&quot;,&quot;query&quot;:&quot;&quot;,&quot;file&quot;:&quot;element&quot;,&quot;directory&quot;:&quot;/&quot;,&quot;path&quot;:&quot;/element&quot;,&quot;relative&quot;:&quot;/element&quot;,&quot;port&quot;:&quot;&quot;,&quot;host&quot;:&quot;&quot;,&quot;password&quot;:&quot;&quot;,&quot;user&quot;:&quot;&quot;,&quot;userInfo&quot;:&quot;&quot;,&quot;authority&quot;:&quot;&quot;,&quot;protocol&quot;:&quot;&quot;,&quot;source&quot;:&quot;/element&quot;,&quot;queryKey&quot;:{},&quot;chunks&quot;:[&quot;element&quot;]},&quot;urlOriginal&quot;:&quot;/session/c08f7e00-e25f-11e8-a48a-67b03460ee58/element&quot;}}
+Command duration or timeout: 0 milliseconds
+	at junit.framework.Assert.fail(Assert.java:47)
+	at LibraryFiles.ReUsableLibrary.serverSideValidations(ReUsableLibrary.java:1261)
+	at TestScripts.TC09_WorkFlowSSV.SSV(TC09_WorkFlowSSV.java:13)
+	at TestScripts.BaseSuiteFile.TC09_WorkFlowSSV(BaseSuiteFile.java:209)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>52</td>
+<td>TestScripts.BaseSuiteFile@48e1f6c7</td></tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC11_E2EFlowInMultiBrowsers()'><b>TC11_E2EFlowInMultiBrowsers</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: Validate End To End Flows in Different Browsers</td>
+<td><div><pre>junit.framework.AssertionFailedError: Decisions are NOT correctly displayed in Approval Pageorg.openqa.selenium.NoSuchElementException: {&quot;errorMessage&quot;:&quot;Unable to find element with xpath &apos;//a[text()=&apos;3&apos;]&apos;&quot;,&quot;request&quot;:{&quot;headers&quot;:{&quot;Accept-Encoding&quot;:&quot;gzip&quot;,&quot;Connection&quot;:&quot;Keep-Alive&quot;,&quot;Content-Length&quot;:&quot;43&quot;,&quot;Content-Type&quot;:&quot;application/json; charset=utf-8&quot;,&quot;Host&quot;:&quot;localhost:22746&quot;,&quot;User-Agent&quot;:&quot;selenium/3.12.0 (java windows)&quot;},&quot;httpVersion&quot;:&quot;1.1&quot;,&quot;method&quot;:&quot;POST&quot;,&quot;post&quot;:&quot;{\&quot;using\&quot;:\&quot;xpath\&quot;,\&quot;value\&quot;:\&quot;//a[text()=&apos;3&apos;]\&quot;}&quot;,&quot;url&quot;:&quot;/element&quot;,&quot;urlParsed&quot;:{&quot;anchor&quot;:&quot;&quot;,&quot;query&quot;:&quot;&quot;,&quot;file&quot;:&quot;element&quot;,&quot;directory&quot;:&quot;/&quot;,&quot;path&quot;:&quot;/element&quot;,&quot;relative&quot;:&quot;/element&quot;,&quot;port&quot;:&quot;&quot;,&quot;host&quot;:&quot;&quot;,&quot;password&quot;:&quot;&quot;,&quot;user&quot;:&quot;&quot;,&quot;userInfo&quot;:&quot;&quot;,&quot;authority&quot;:&quot;&quot;,&quot;protocol&quot;:&quot;&quot;,&quot;source&quot;:&quot;/element&quot;,&quot;queryKey&quot;:{},&quot;chunks&quot;:[&quot;element&quot;]},&quot;urlOriginal&quot;:&quot;/session/2318b640-e260-11e8-8bc5-35336f08bbc3/element&quot;}}
+Command duration or timeout: 0 milliseconds
+	at junit.framework.Assert.fail(Assert.java:47)
+	at TestScripts.TC11_E2EFlowInMultiBrowsers.e2eFlowInMultiBrowsers(TC11_E2EFlowInMultiBrowsers.java:79)
+	at TestScripts.BaseSuiteFile.TC11_E2EFlowInMultiBrowsers(BaseSuiteFile.java:219)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1601685644", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1601685644'><pre>junit.framework.AssertionFailedError: Decisions are NOT correctly displayed in Approval Pageorg.openqa.selenium.NoSuchElementException: {&quot;errorMessage&quot;:&quot;Unable to find element with xpath &apos;//a[text()=&apos;3&apos;]&apos;&quot;,&quot;request&quot;:{&quot;headers&quot;:{&quot;Accept-Encoding&quot;:&quot;gzip&quot;,&quot;Connection&quot;:&quot;Keep-Alive&quot;,&quot;Content-Length&quot;:&quot;43&quot;,&quot;Content-Type&quot;:&quot;application/json; charset=utf-8&quot;,&quot;Host&quot;:&quot;localhost:22746&quot;,&quot;User-Agent&quot;:&quot;selenium/3.12.0 (java windows)&quot;},&quot;httpVersion&quot;:&quot;1.1&quot;,&quot;method&quot;:&quot;POST&quot;,&quot;post&quot;:&quot;{\&quot;using\&quot;:\&quot;xpath\&quot;,\&quot;value\&quot;:\&quot;//a[text()=&apos;3&apos;]\&quot;}&quot;,&quot;url&quot;:&quot;/element&quot;,&quot;urlParsed&quot;:{&quot;anchor&quot;:&quot;&quot;,&quot;query&quot;:&quot;&quot;,&quot;file&quot;:&quot;element&quot;,&quot;directory&quot;:&quot;/&quot;,&quot;path&quot;:&quot;/element&quot;,&quot;relative&quot;:&quot;/element&quot;,&quot;port&quot;:&quot;&quot;,&quot;host&quot;:&quot;&quot;,&quot;password&quot;:&quot;&quot;,&quot;user&quot;:&quot;&quot;,&quot;userInfo&quot;:&quot;&quot;,&quot;authority&quot;:&quot;&quot;,&quot;protocol&quot;:&quot;&quot;,&quot;source&quot;:&quot;/element&quot;,&quot;queryKey&quot;:{},&quot;chunks&quot;:[&quot;element&quot;]},&quot;urlOriginal&quot;:&quot;/session/2318b640-e260-11e8-8bc5-35336f08bbc3/element&quot;}}
+Command duration or timeout: 0 milliseconds
+	at junit.framework.Assert.fail(Assert.java:47)
+	at TestScripts.TC11_E2EFlowInMultiBrowsers.e2eFlowInMultiBrowsers(TC11_E2EFlowInMultiBrowsers.java:79)
+	at TestScripts.BaseSuiteFile.TC11_E2EFlowInMultiBrowsers(BaseSuiteFile.java:219)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>21</td>
+<td>TestScripts.BaseSuiteFile@48e1f6c7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC01_UserLogin()'><b>TC01_UserLogin</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: Login to The Portal using User Logins</td>
+<td></td>
+<td>7</td>
+<td>TestScripts.BaseSuiteFile@48e1f6c7</td></tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC02_ManagerLogin()'><b>TC02_ManagerLogin</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: Login to The Portal using Manager Logins</td>
+<td></td>
+<td>4</td>
+<td>TestScripts.BaseSuiteFile@48e1f6c7</td></tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC04_LoginWithDiffUsers()'><b>TC04_LoginWithDiffUsers</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: Login to The Portal using different Logins from the dataprovider<br>Parameters: loanccdemouser1, rules</td>
+<td></td>
+<td>10</td>
+<td>TestScripts.BaseSuiteFile@48e1f6c7</td></tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC04_LoginWithDiffUsers()'><b>TC04_LoginWithDiffUsers</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: Login to The Portal using different Logins from the dataprovider<br>Parameters: loanccdemomanager1, rules</td>
+<td></td>
+<td>17</td>
+<td>TestScripts.BaseSuiteFile@48e1f6c7</td></tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC04_LoginWithDiffUsers()'><b>TC04_LoginWithDiffUsers</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: Login to The Portal using different Logins from the dataprovider<br>Parameters: admin.loancc, rules</td>
+<td></td>
+<td>12</td>
+<td>TestScripts.BaseSuiteFile@48e1f6c7</td></tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC06_BusinessRulesAndDecisioning()'><b>TC06_BusinessRulesAndDecisioning</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: Business Rules And Decisioning<br>Parameters: 1000, Credit Card, Approved, Approved, Approved</td>
+<td></td>
+<td>49</td>
+<td>TestScripts.BaseSuiteFile@48e1f6c7</td></tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC06_BusinessRulesAndDecisioning()'><b>TC06_BusinessRulesAndDecisioning</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: Business Rules And Decisioning<br>Parameters: 260000, Credit Card, Approved, Approved, Rejected</td>
+<td></td>
+<td>49</td>
+<td>TestScripts.BaseSuiteFile@48e1f6c7</td></tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC10_validateSLA()'><b>TC10_validateSLA</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: Validate SLA</td>
+<td></td>
+<td>108</td>
+<td>TestScripts.BaseSuiteFile@48e1f6c7</td></tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC12_SkillBasedRouting()'><b>TC12_SkillBasedRouting</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: Validate Skill Based Routing</td>
+<td></td>
+<td>0</td>
+<td>TestScripts.BaseSuiteFile@48e1f6c7</td></tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC13_GetNextWork()'><b>TC13_GetNextWork</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: Validate Get Next Work</td>
+<td></td>
+<td>0</td>
+<td>TestScripts.BaseSuiteFile@48e1f6c7</td></tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC14_WorkBaskets()'><b>TC14_WorkBaskets</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: Validate WorkBaskets</td>
+<td></td>
+<td>0</td>
+<td>TestScripts.BaseSuiteFile@48e1f6c7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestScripts.BaseSuiteFile.TC04_Test()'><b>TC04_Test</b><br>Test class: TestScripts.BaseSuiteFile<br>Test method: Just for skipping a test</td>
+<td><div><pre>org.testng.SkipException: Skipped Test
+	at TestScripts.BaseSuiteFile.TC04_Test(BaseSuiteFile.java:184)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace114474947", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace114474947'><pre>org.testng.SkipException: Skipped Test
+	at TestScripts.BaseSuiteFile.TC04_Test(BaseSuiteFile.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestScripts.BaseSuiteFile@48e1f6c7</td></tr>
+</table><p>
+</body>
+</html>

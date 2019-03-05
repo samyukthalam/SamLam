@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestSuite1" verbose="1">
+	<listeners>
+		<listener class-name="Listeners.RetryListenerClass" />
+	</listeners>
+	<test name="TestSuite1Tests">
+		<classes>
+			<class name="TestScripts.BaseSuiteFile" />
+		</classes>
+	</test>
+</suite>

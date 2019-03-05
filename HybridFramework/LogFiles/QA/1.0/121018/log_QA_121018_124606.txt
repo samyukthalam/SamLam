@@ -1,0 +1,6 @@
+2018-12-10 12:46:06,742 INFO  [CreateLogger] CREATED LOGGER BEFORE SUITE START 
+2018-12-10 12:46:06,756 INFO  [CreateLogger] Suite STARTED 
+2018-12-10 12:46:06,762 INFO  [CreateLogger] Directory Created :: .//TestReports//HTMLReports//QA//1.0//121018 
+2018-12-10 12:46:44,834 INFO  [CreateLogger] TOOK SCREENSHOTS FOR THE PASSED TESTS 
+2018-12-10 12:46:45,521 INFO  [CreateLogger] Printed Test Stats to Console 
+2018-12-10 12:46:45,521 INFO  [CreateLogger] Suite ENDED 
